@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jaguarlabs.sipac.util.FractionFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/screenbackground">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarskin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/menubuttonskin" />
+
+        <TextView
+            style="@style/titleText"
+            android:text="Perfil de Usuario" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/img_logo" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="60dp"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="60dp"
+                android:text="Fecha de expiración" />
+
+            <FrameLayout
+                android:id="@+id/frame_expiration"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textView1"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/expiration_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/skinlesstext"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/frame_expiration"
+                android:layout_marginTop="100dp"
+                android:text="I.D." />
+
+            <FrameLayout
+                android:id="@+id/frame_id"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView01"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/identifier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/skinlesstext"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView02"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/frame_id"
+                android:text="Nombre" />
+
+            <FrameLayout
+                android:id="@+id/frame_nombre"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView02"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/skinlesstext"
+                    android:text="Julio Cesar Lemus Lara"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/frame_nombre"
+                android:text="R.F.C" />
+
+            <FrameLayout
+                android:id="@+id/frame_rfc"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView03"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/rfc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/skinlesstext"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/frame_rfc"
+                android:text="Email" />
+
+            <FrameLayout
+                android:id="@+id/frame_date"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView04"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/birth_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/skinlesstext"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+   </com.jaguarlabs.sipac.util.FractionFrameLayout>

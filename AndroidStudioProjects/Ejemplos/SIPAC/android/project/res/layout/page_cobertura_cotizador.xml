@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_margin="13dp" >
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >
+						            		    
+	<LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" 
+           android:background="#2472B5"
+           style="@style/cotizadorrow">
+           <TextView 
+                 android:layout_weight="2"
+                 android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+                 style="@style/cotizadorheadertext"
+                 android:layout_height="wrap_content" android:text="Coberturas" />
+           
+           <TextView 
+               android:layout_weight="1"
+               style="@style/cotizadorheadertext"
+           	android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+               android:layout_height="wrap_content" android:text="Suma Asegurada" />
+           
+            <TextView 
+                style="@style/cotizadorheadertext"
+                android:layout_weight="1"
+           	 android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+                android:layout_height="wrap_content" android:text="Prima Anual" />
+        </LinearLayout>
+        <View style="@style/Divider"/>
+        <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal"  
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:background="#FFEFEEED"> 
+           <CheckBox android:id="@+id/basCheck"
+        	android:layout_width="0dp"
+        	android:layout_weight="2"
+        	android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+		  	style="@style/blackinfotext"
+		  	android:checked="true"
+		  	android:enabled="false"
+		  	android:text="Cobertura básica por fallecimiento" />
+           
+           <EditText
+               android:id="@+id/basSuma"
+               style="@style/blackforminput"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"
+               android:imeOptions="actionDone"
+               android:inputType="number" />
+           
+           <EditText
+               android:id="@+id/basPrima"
+               style="@style/blackforminput"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"
+               android:enabled="false"
+               android:imeOptions="actionDone"
+               android:inputType="number" />
+ 
+        </LinearLayout>
+        <View style="@style/Divider"/>
+        <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal"  
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" 
+           style="@style/cotizadorrow"
+           android:layout_marginLeft="5dp"> 
+
+           <CheckBox
+               android:id="@+id/bitCheck"
+               style="@style/blackinfotext"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_weight="2"
+               android:text="Exención de pago de primas por invalidez(BIT)" />
+           
+           <EditText
+               android:id="@+id/bitSuma"
+               style="@style/blackforminput"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"
+               android:enabled="false"
+               android:imeOptions="actionDone"
+               android:inputType="number" />
+           
+           <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+               android:layout_weight="1"
+           	android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/bitPrima"
+       	  android:enabled="false"
+       	 
+ 	  style="@style/blackforminput" /> 
+        </LinearLayout> 
+        <View style="@style/Divider"/>
+        <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:layout_marginLeft="5dp">
+           
+            <CheckBox 
+android:id="@+id/ciiCheck"
+        	android:layout_width="0dp" 
+               android:layout_weight="2"
+               android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+  	style="@style/blackinfotext"
+  	android:text="Indemnización por Invalidez (CII)" />
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+               android:layout_weight="1"
+           	android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/ciiSuma"
+       	 
+ 	  style="@style/blackforminput" />
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/ciiPrima"
+       	  android:enabled="false"
+       	  
+ 	  style="@style/blackforminput" /> 
+ 	  
+        </LinearLayout>
+        <View style="@style/Divider"/>
+        <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:background="#FFEFEEED">
+            
+            <CheckBox 
+android:id="@+id/cmaCheck"
+        	android:layout_width="0dp" 
+               android:layout_weight="2"
+               android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+  	style="@style/blackinfotext"
+  	android:text="Muerte accidental (CMA)" 
+  	/>
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+               android:layout_weight="1"
+           	android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/cmaSuma"
+       	  
+ 	  style="@style/blackforminput" />
+            
+            <EditText
+             android:imeOptions="actionDone" 
+       	  android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/cmaPrima"
+       	  android:enabled="false"
+       	 
+ 	  style="@style/blackforminput" /> 
+            
+        </LinearLayout>
+        <View style="@style/Divider"/>
+        <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:background="#FFEFEEED">
+            
+            <CheckBox 
+			android:id="@+id/tibaCheck"
+        	android:layout_width="0dp" 
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+		  	style="@style/blackinfotext"
+		  	android:text="Triple indemnización por muerte accidental" />
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	  	 android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+	       	 android:layout_height="wrap_content"
+	       	 android:inputType="number"
+	       	 android:id="@+id/tibaSuma"
+	       	
+	 	     style="@style/blackforminput" />
+            
+            <EditText 
+	             android:imeOptions="actionDone"
+	       	     android:layout_width="0dp" 
+	             android:layout_weight="1"
+	             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+	       	  	 android:layout_height="wrap_content"
+		       	 android:inputType="number"
+		       	 android:id="@+id/tibaPrima"
+		       	 android:enabled="false"
+		       	 
+		 	  	 style="@style/blackforminput" /> 
+        	</LinearLayout>
+       		<View style="@style/Divider"/>
+         <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:layout_marginLeft="5dp">
+            
+            <CheckBox 
+			android:id="@+id/catCheck"
+        	android:layout_width="0dp" 
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+		  	style="@style/blackinfotext"
+		  	android:text="Cáncer del Asegurado Titular" />
+            
+            <EditText
+             android:imeOptions="actionDone" 
+       	  	 android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  	 android:layout_height="wrap_content"
+       	  	 android:inputType="number"
+       	  	 android:id="@+id/catSuma"
+       	  	
+ 	  		 style="@style/blackforminput" />
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	     android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  	 android:layout_height="wrap_content"
+       	  	 android:inputType="number"
+       	  	 android:id="@+id/catPrima"
+	       	 android:enabled="false"
+	       	 
+	 	     style="@style/blackforminput" /> 
+         </LinearLayout>
+         <View style="@style/Divider"/>
+         <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:layout_marginLeft="5dp">
+            
+            <CheckBox 
+android:id="@+id/gfaCheck"
+        	android:layout_width="0dp" 
+               android:layout_weight="2"
+               android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+  	style="@style/blackinfotext"
+  	android:text="Gastos funerarios del asegurado(GFA)" />
+            
+           
+           <EditText
+             android:imeOptions="actionDone" 
+       	  android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/gfaSuma"
+       	  
+ 	  style="@style/blackforminput" />
+            
+            <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/gfaPrima"
+       	  android:enabled="false"
+ 	  style="@style/blackforminput" /> 
+ 	  
+       </LinearLayout>
+       <View style="@style/Divider"/>
+       <LinearLayout android:layout_width="fill_parent" 
+           android:orientation="horizontal" 
+           android:gravity="center_vertical"
+           android:layout_height="wrap_content" style="@style/cotizadorrow"
+           android:background="#FFEFEEED">
+            
+            <CheckBox 
+android:id="@+id/geCheck"
+        	android:layout_width="0dp" 
+               android:layout_weight="2"
+               android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+        	android:layout_height="wrap_content"
+  	style="@style/blackinfotext"
+  	android:text="Garantía Escolar" />
+            
+           
+           <EditText 
+             android:imeOptions="actionDone"
+       	  android:layout_width="0dp" 
+             android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/geSuma"
+       	 
+ 	  style="@style/blackforminput" />
+            
+            <EditText 
+            android:imeOptions="actionDone"
+       	 android:layout_width="0dp" 
+            android:layout_weight="1"
+             android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+       	  android:layout_height="wrap_content"
+       	  android:inputType="number"
+       	  android:id="@+id/gePrima"
+       	  android:enabled="false"
+       	 
+ 	  style="@style/blackforminput" /> 
+ 	  
+       </LinearLayout>
+       <View style="@style/Divider"/>
+   </LinearLayout>
+						            		  
+</ScrollView>

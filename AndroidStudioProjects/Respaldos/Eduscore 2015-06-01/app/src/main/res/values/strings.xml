@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Eduscore</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_guardar">Guardar</string>
+
+    <string name="text_hint_user">Usuario</string>
+    <string name="text_hint_pass">Contraseña</string>
+    <string name="text_entrar">Entrar</string>
+    <string name="text_salir">Salir</string>
+
+    <string name="text_registro">Registro de Aspirantes</string>
+    <string name="text_informacion_personal">Información Personal</string>
+    <string name="text_nombre">Nombre(s)*</string>
+    <string name="text_escribir_nombre">Escriba un Nombre</string>
+    <string name="text_apellido">Apellido(s)*</string>
+    <string name="text_escribir_apellido">Escriba Apellido</string>
+    <string name="text_correo">Correo</string>
+    <string name="text_accion">Acción</string>
+    <string name="text_hint_correo">ejemplo@dominio.com</string>
+    <string name="text_telefono">Teléfono</string>
+    <string name="text_hint_telefono">999 999 9999</string>
+    <string name="text_tipo_tel">Tipo</string>
+    <string name="text_intereses">Seleccione Intereses</string>
+    <string name="text_opciones">Seleccione Opciones</string>
+    <string name="text_tipo_interes">Tipo Interés</string>
+    <string name="text_horario">Horario:</string>
+
+    <string name="text_adicionales">Datos Adicionales</string>
+    <string name="text_medio">Medio de Información</string>
+    <string name="text_procedencia">Lugar de Procedencia</string>
+    <string name="text_probabilidad">Probabilidad de Ingreso</string>
+    <string name="text_evento_procedencia">Evento de Procedencia</string>
+
+    <string name="text_datos_personales">Datos Personales Adicionales</string>
+    <string name="text_pais_residencia">País de Residencia</string>
+    <string name="text_hint_pais_residencia">Seleccione País de Residencia</string>
+    <string name="text_estado_residencia">Estado de Residencia</string>
+    <string name="text_hint_estado_residencia">Seleccione Estado de Residencia</string>
+    <string name="text_ciudad_residencia">Ciudad de Residencia</string>
+    <string name="text_hint_ciudad_residencia">Seleccione Ciudad de Residencia</string>
+    <string name="text_calle">Nombre de la Calle</string>
+    <string name="text_hint_calle">Escriba la Calle del Domicilio</string>
+    <string name="text_numero_ext">Número Exterior</string>
+    <string name="text_hint_numero_ext">Escriba el Número Exterior del Domicilio</string>
+    <string name="text_numero_int">Número Interior</string>
+    <string name="text_hint_numero_int">Escriba el Número Interior del Domicilio</string>
+    <string name="text_colonia">Nombre de la Colonia</string>
+    <string name="text_hint_colonia">Escriba la Colonia del Domicilio</string>
+    <string name="text_codigo_postal">Código Postal</string>
+    <string name="text_hint_codigo_postal">Escriba el Código Postal del Domicilio</string>
+    <string name="text_clave_curp">CURP</string>
+    <string name="text_hint_clave_curp">Escriba la CURP del Aspirante</string>
+    <string name="text_pais_origen">País de Origen</string>
+    <string name="text_hint_pais_origen">Seleccione País de Origen</string>
+    <string name="text_estado_origen">Estado de Origen</string>
+    <string name="text_hint_estado_origen">Seleccione Estado de Origen</string>
+    <string name="text_ciudad_origen">Ciudad de Origen</string>
+    <string name="text_hint_ciudad_origen">Seleccione Ciudad de Origen</string>
+    <string name="text_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="text_hint_fecha_nacimiento">Seleccione la Fecha de Nacimiento</string>
+    <string name="text_guardar_cambios">Guardar Datos</string>
+    <string name="text_actualizar_cambios">Actualizar Datos</string>
+    <string name="text_select_pais">Seleccione un País</string>
+    <string name="text_select_estado">Seleccione un Estado</string>
+    <string name="text_select_ciudad">Seleccione una Ciudad</string>
+
+    <string name="msj_num_valid">Debes poner un número valido.</string>
+    <string name="msj_email_valid">Debes poner un correo valido.</string>
+    <string name="msj_email_repeat">Ya existe un registro de ese correo.</string>
+
+
+    <string-array name="spinner_array_tel">
+        <item>Casa</item>
+        <item>Celular</item>
+        <item>Trabajo</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="spinner_array_tipo_interes">
+        <item>Precencial u On-line</item>
+        <item>Precencial</item>
+        <item>On-line</item>
+    </string-array>
+
+    <string-array name="spinner_array_horario">
+        <item>Cualquiera</item>
+        <item>Entre Semana</item>
+        <item>Sabatino</item>
+    </string-array>
+
+    <string-array name="spinner_array_probabilidad_ingreso">
+        <item>Seleccione una Probabilidad</item>
+        <item>Muy Alto</item>
+        <item>Alto</item>
+        <item>Medio</item>
+        <item>Bajo</item>
+        <item>Muy Bajo</item>
+    </string-array>
+
+    <string name="dialog_aceptar">Aceptar</string>
+    <string name="dialog_limpiar">Limpiar Filtro</string>
+
+</resources>

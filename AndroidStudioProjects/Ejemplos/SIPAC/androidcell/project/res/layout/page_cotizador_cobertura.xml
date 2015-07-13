@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="#2472B5"
+            style="@style/cotizadorrow">
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Coberturas"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Suma Asegurada"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Prima Anual"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                style="@style/cotizadorrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="0dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEFEEED"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/basCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:text="BAS"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/basSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/basPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/bitCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="BIT"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/bitSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" >
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/bitPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/ciiCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="CII"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/ciiSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/ciiPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEFEEED"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cmaCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="CMA"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/cmaSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/cmaPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEFEEED"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/tibaCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="TIBA"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/tibaSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/tibaPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/catCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="CAT"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/catSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/catPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/gfaCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="GFA"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/gfaSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/gfaPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    style="@style/cotizadorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEFEEED"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/geCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:checked="false"
+                        android:text="GE"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/geSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/gePrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

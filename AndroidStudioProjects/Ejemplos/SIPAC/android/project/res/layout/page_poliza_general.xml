@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/pageskin">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18dp"
+	        android:text="Datos Personales"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <View   android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="#FF000000"/>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_weight="2"     
+	            android:text="Sexo"
+	            style="@style/blackinfotext"
+	         	/>
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Fuma"
+	           	style="@style/blackinfotext"
+	             />
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Estado Civil"
+	           	style="@style/blackinfotext"
+	             />
+	
+	        <TextView
+	            android:layout_weight="2"
+	            android:text="Fecha de Nacimiento"
+	            style="@style/blackinfotext"
+	           />
+	
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/sexoText"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/fumaText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/civilText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+	        <TextView
+	            android:id="@+id/nacText"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Edad"
+	          	style="@style/blackinfotext" />
+	
+	        <TextView
+	            android:layout_weight="2"
+	            android:text="Domicilio"
+	            style="@style/blackinfotext" />
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/edadText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/calleText"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	         <TextView
+	            android:layout_weight="2"	
+	            android:text="Población"
+	           	style="@style/blackinfotext"/>
+
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="C.P."
+	            style="@style/blackinfotext" />
+	        
+			
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+		 	<TextView
+	            android:id="@+id/poblacionText"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/cpText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+			
+	
+	    </LinearLayout>
+	    
+	   
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Teléfono"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="E-mail"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/telefonoText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	             android:id="@+id/emailText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Datos Financieros"
+	        android:textSize="18dp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <View   android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="#FF000000"/>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Monto de la prima pagada"
+	            style="@style/blackinfotext" />
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Monto Reserva"
+	            style="@style/blackinfotext" />
+	
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/pPagadaText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/reservaText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Monto fondo de Inv."
+	            style="@style/blackinfotext" />
+	
+	        <TextView
+	            style="@style/blackinfotext"
+	            android:layout_weight="1"
+	            android:text="Prima Pendiente"
+	            />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/invText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/pPendienteText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Recibos Pendientes"
+	            style="@style/blackinfotext" />
+	
+	        <TextView
+	            android:layout_weight="1"
+	            android:text="Último Pago"
+	            style="@style/blackinfotext" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/rPendienteText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/uPagoText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Prima emitida"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Prima quincenal"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/pEmitidaText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/pQuincenalText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Movimientos de la póliza"
+	        android:textSize="18dp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <View   android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="#FF000000"/>
+	     
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Fecha inicial de vigencia"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Fecha de última modificación"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	             android:id="@+id/iniVigText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	             android:id="@+id/uModText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Fecha del último retiro"
+	            android:textColor="#000000"
+	         	android:textSize="20dp"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="6dp" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/uRetiroText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/textboxskin"
+	        	android:paddingTop="7dp" android:paddingBottom="7dp"
+	         	android:paddingLeft="14dp" android:paddingRight="15dp"
+	         	android:textSize="22dp" android:textColor="#818084"
+	         	android:layout_marginRight="7dp"
+	         	android:layout_marginLeft="7dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="6dp" />
+	
+	    </LinearLayout>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Cobertura de la póliza"
+	        android:textSize="18dp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <View   android:layout_width="fill_parent"
+				android:layout_height="2dip"
+				android:background="#FF000000"/>
+	   
+	    <LinearLayout android:layout_width="fill_parent" 
+	        		android:layout_height="wrap_content"
+	        		android:layout_marginTop="6dp"
+	        		android:layout_marginLeft="16dp"
+	        		android:layout_marginRight="16dp"
+	        		android:orientation="vertical"
+	        		android:padding="3dp"
+	        		android:background="@drawable/tableframeskin">
+	        
+	        <LinearLayout android:layout_height="wrap_content"
+	            		  android:layout_width="fill_parent" 
+	            		  android:background="#4972B1" >
+	            <TextView
+			        android:text="Cobertura"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:layout_height="match_parent"
+			        android:textSize="17sp"
+			        android:textColor="#FFFFFF"
+			        android:layout_gravity="center_vertical"
+			        android:gravity="center_horizontal"
+			        android:textIsSelectable="false" />
+			    
+			    <View android:layout_height="fill_parent"
+			        android:layout_width="3dp" 
+			        android:background="#D4D0C8" />
+			    <TextView
+			        android:text="Prima"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:layout_height="match_parent"
+			        android:textSize="17sp"
+			        android:textColor="#FFFFFF"
+			        android:layout_gravity="center_vertical"
+			        android:gravity="center_horizontal"
+			        android:textIsSelectable="false" />
+			    
+			     <View android:layout_height="fill_parent"
+			        android:layout_width="3dp" 
+			        android:background="#D4D0C8" />
+			      <TextView
+			        android:text="Prima Extra"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:layout_height="match_parent"
+			        android:textSize="17sp"
+			        android:textColor="#FFFFFF"
+			        android:layout_gravity="center_vertical"
+			        android:gravity="center_horizontal"
+			        android:textIsSelectable="false" />
+			      
+			      <View android:layout_height="fill_parent"
+			        android:layout_width="3dp" 
+			        android:background="#D4D0C8" />
+			      <TextView
+			        android:text="Suma Asegurada"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:layout_height="match_parent"
+			        android:textSize="17sp"
+			        android:textColor="#FFFFFF"
+			        android:layout_gravity="center_vertical"
+			        android:gravity="center_horizontal"
+			        android:textIsSelectable="false" />
+	        </LinearLayout>
+	        <LinearLayout 
+	            		android:id="@+id/coberturaList"  
+	            		android:orientation="vertical"
+	            		android:layout_width="fill_parent" 
+	        			android:layout_height="wrap_content">    
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageSplash"
+        android:background="@null"
+        android:src="@drawable/uniat_logo" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUser"
+        android:layout_gravity="center_horizontal"
+        style="@style/style_edittext_back"
+        android:textSize="26dp"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:hint="@string/text_hint_user" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/editTextPass"
+        android:layout_gravity="center_horizontal"
+        style="@style/style_edittext_back"
+        android:textSize="26dp"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:hint="@string/text_hint_pass" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_entrar"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:id="@+id/btnEntrar"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn"
+            android:onClick="onClickLogin"
+            android:layout_marginRight="15dp"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_salir"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:id="@+id/btnSalir"
+            android:layout_weight="1"
+
+            android:background="@drawable/selector_btn"
+            android:onClick="onClickSalir"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="5dp" > -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_gravity="center" -->
+<!--                 android:layout_weight="1" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/textView1" -->
+<!--                     style="@style/textProspeccion" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentLeft="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:text="Estructura" -->
+<!--                     android:textColor="#000000" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight=".7" > -->
+
+<!--                 <Spinner -->
+<!--                     android:id="@+id/spinnerEstructura" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignBottom="@+id/imageButtonEstructura" -->
+<!--                     android:layout_alignLeft="@+id/imageButtonEstructura" -->
+<!--                     android:layout_alignTop="@+id/estructura" -->
+<!--                     android:background="@null" -->
+<!--                     android:visibility="invisible" /> -->
+
+<!--                 <RelativeLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_toLeftOf="@+id/imageButtonEstructura" -->
+<!--                     android:background="@drawable/commoneditskin" > -->
+
+<!--                     <View -->
+<!--                         android:id="@+id/view1" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="8dp" -->
+<!--                         android:layout_gravity="top" -->
+<!--                         android:layout_marginLeft="2dp" -->
+<!--                         android:layout_marginRight="2dp" -->
+<!--                         android:background="@drawable/shadowskin" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/estructura" -->
+<!--                         style="@style/textProspeccion" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:padding="5dp" -->
+<!--                         android:text="TODAS" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#222222" /> -->
+
+<!--                 </RelativeLayout> -->
+                
+
+<!--                 <ImageButton -->
+<!--                     android:id="@+id/imageButtonEstructura" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentRight="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:background="@null" -->
+<!--                     android:padding="8dp" -->
+<!--                     android:src="@drawable/spinnerbuttonskin" /> -->
+<!--             </RelativeLayout> -->
+<!--         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/text01"
+                    style="@style/textProspeccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Retenedor"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/commoneditskin" >
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="8dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/shadowskin" />
+
+                    <EditText
+                        android:id="@+id/retendor"
+                        style="@style/textProspeccion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/deletebutton1"
+                        android:background="@drawable/skinlesstext"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingLeft="5dp" />
+
+                    <ImageButton
+                        android:id="@+id/deletebutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/view1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/deletebuttonskin"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="5dp" > -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_gravity="center" -->
+<!--                 android:layout_weight="1" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/TextView04" -->
+<!--                     style="@style/textProspeccion" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentLeft="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:text="Unidad de pago" -->
+<!--                     android:textColor="#000000" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight=".7" > -->
+
+<!--                 <RelativeLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:background="@drawable/commoneditskin" > -->
+
+<!--                     <View -->
+<!--                         android:id="@+id/view1" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="8dp" -->
+<!--                         android:layout_gravity="top" -->
+<!--                         android:layout_marginLeft="2dp" -->
+<!--                         android:layout_marginRight="2dp" -->
+<!--                         android:background="@drawable/shadowskin" /> -->
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/unidadPago" -->
+<!--                         style="@style/textProspeccion" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toLeftOf="@+id/deletebutton2" -->
+<!--                         android:background="@drawable/skinlesstext" -->
+<!--                         android:ems="10" -->
+<!--                         android:inputType="number" -->
+<!--                         android:paddingLeft="5dp" /> -->
+
+<!--                     <ImageButton -->
+<!--                         android:id="@+id/deletebutton2" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_alignRight="@+id/view1" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginTop="10dp" -->
+<!--                         android:background="@null" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/deletebuttonskin" -->
+<!--                         android:visibility="invisible" /> -->
+<!--                 </RelativeLayout> -->
+<!--             </RelativeLayout> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="5dp" > -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_gravity="center" -->
+<!--                 android:layout_weight="1" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/TextView06" -->
+<!--                     style="@style/textProspeccion" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentLeft="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:text="Zona" -->
+<!--                     android:textColor="#000000" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight=".7" > -->
+
+<!--                 <Spinner -->
+<!--                     android:id="@+id/SpinnerZona" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignBottom="@+id/ImageButtoZona" -->
+<!--                     android:layout_alignLeft="@+id/ImageButtoZona" -->
+<!--                     android:layout_alignParentRight="true" -->
+<!--                     android:layout_alignTop="@+id/relativeLayout1" -->
+<!--                     android:background="@null" -->
+<!--                     android:visibility="invisible" /> -->
+
+<!--                 <RelativeLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_toLeftOf="@+id/ImageButtoZona" -->
+<!--                     android:background="@drawable/commoneditskin" > -->
+
+<!--                     <View -->
+<!--                         android:id="@+id/view1" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="8dp" -->
+<!--                         android:layout_gravity="top" -->
+<!--                         android:layout_marginLeft="2dp" -->
+<!--                         android:layout_marginRight="2dp" -->
+<!--                         android:background="@drawable/shadowskin" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/zona" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:padding="5dp" -->
+<!--                         android:text="TODAS" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#222222" -->
+<!--                         android:textSize="12sp" /> -->
+
+<!--                 </RelativeLayout> -->
+
+<!--                 <ImageButton -->
+<!--                     android:id="@+id/ImageButtoZona" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentRight="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:background="@null" -->
+<!--                     android:padding="8dp" -->
+<!--                     android:src="@drawable/spinnerbuttonskin" /> -->
+<!--             </RelativeLayout> -->
+
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="5dp" > -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_gravity="center" -->
+<!--                 android:layout_weight="1" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/TextView08" -->
+<!--                     style="@style/textProspeccion" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentLeft="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:text="Municipio de empresa" -->
+<!--                     android:textColor="#000000" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight=".7" > -->
+
+<!--                 <RelativeLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:background="@drawable/commoneditskin" > -->
+
+<!--                     <View -->
+<!--                         android:id="@+id/view1" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="8dp" -->
+<!--                         android:layout_gravity="top" -->
+<!--                         android:layout_marginLeft="2dp" -->
+<!--                         android:layout_marginRight="2dp" -->
+<!--                         android:background="@drawable/shadowskin" /> -->
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/municipio" -->
+<!--                         style="@style/textProspeccion" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toLeftOf="@+id/deletebutton3" -->
+<!--                         android:background="@drawable/skinlesstext" -->
+<!--                         android:ems="10" -->
+<!--                         android:inputType="number" -->
+<!--                         android:paddingLeft="5dp" /> -->
+
+<!--                     <ImageButton -->
+<!--                         android:id="@+id/deletebutton3" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_alignRight="@+id/view1" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginTop="10dp" -->
+<!--                         android:background="@null" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/deletebuttonskin" -->
+<!--                         android:visibility="invisible" /> -->
+<!--                 </RelativeLayout> -->
+<!--             </RelativeLayout> -->
+<!--         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/subCartera"
+                    style="@style/textProspeccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Unidad de Pago"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/commoneditskin" >
+
+                    <View
+                        android:id="@+id/View01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="8dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/shadowskin" />
+
+                    <EditText
+                        android:id="@+id/subCarteraEdit"
+                        style="@style/textProspeccion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/ImageButton01"
+                        android:background="@drawable/skinlesstext"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingLeft="5dp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/ImageButton01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/View01"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/deletebuttonskin"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

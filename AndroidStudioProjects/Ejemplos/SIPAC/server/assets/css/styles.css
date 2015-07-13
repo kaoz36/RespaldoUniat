@@ -1,0 +1,192 @@
+/* orden de elementos por orden de aparicion y relevancia, tags, ids y classes */
+body{
+	background: #212121 url(../img/fondo.jpg);
+	color: #FFF;
+	font-family: "Chalet", Helvetica, Verdana; /* fuentes no seguras con comillas */
+	font-size: 1em;
+}
+
+a {
+	color: #57ABB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #F60;
+}
+
+figcaption {
+	 font-size: 0.85em;
+	 padding: 0.25em;
+	 text-align: center;
+}
+/* Regla de RD tener scale grid, medidas relativas anchuras y alturas maximas y minimas*/
+img, video{
+	max-width: 100%;
+}
+
+header, section#contenido, footer{
+	background: #FFF url(../img/fondo-interno.jpg);
+	margin: 0 auto; /*centrar*/
+	max-width: 90%; /*RD*/
+	text-align: center;
+}
+
+header h1, nav{
+	display: inline-block; /*Para que los elemento esten a la misma altura*/
+	max-width: 100%;	/*RD Regla de crecimiento relativa proporcional al contenedor*/
+	vertical-align: middle; /* Centrado vertical midiendo todo lo que esta a la misma altura*/
+}
+
+nav ul{
+	list-style:	none; /*Quitar las viñetas*/
+}
+
+nav li{
+	display: inline-block; /* Fix para alinear horizontalmente */
+	padding: 0.1em;
+	vertical-align: center;
+}
+
+nav a{
+	background: #FFF;
+	border: 0.1em solid #57ABB8;
+	border-radius: 0.25em; /*CSS3  Redondear Esquinas*/
+	color: #F60;
+	display: block;
+	font-family: "Pecita", Helvetica, Verdana;
+	font-size: 1.4em;
+	padding: 0.2em;
+	-ms-transition: all .5s ease-in;/* Internet Explorer*/
+	-moz-transition: all .5s ease-in;/* Firefox*/
+	-o-transition: all .5s ease-in;/* opera*/
+	-webkit-transition: all .5s ease-in;/* Chrome / Safari*/
+	transition: all .5s ease-in;/* CSS3 [atributo afectado] [tiempo en segundos] [easing]*/
+}
+
+nav a:hover{
+	 background: #212121;
+	 border: 0.1em dashed #F60; /*[grosor] [tipo de linea] [color] */
+	 border-radius: 0 0.5em 0 0.5em; /*[topleft] [topright] [bottomright] [bottomleft] */
+	 color:#FFF;
+	 -ms-transition: all .5s ease-out;/* Internet Explorer*/
+	-moz-transition: all .5s ease-out;/* Firefox*/
+	-o-transition: all .5s ease-out;/* opera*/
+	-webkit-transition: all .5s ease-out;/* Chrome / Safari*/
+	transition: all .5s ease-out;/* CSS3 [atributo afectado] [tiempo en segundos] [easing]*/
+}
+
+/*para etiquetas semanticas se especifica tag#id */
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%; /* solo para section#principal*/
+}
+
+article#galeria-inicio{
+	border-radius: 0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: left;
+	width: 95%;
+}
+
+aside{
+	width: 30%; /*se sugiere dejar un 5% por margenes/padding/border */
+	min-width: 210px;
+}
+aside img{
+	border-radius: 0.5em;
+}
+
+footer{
+	color: #000;
+	font-size: 0.85em;
+	padding: 0.75em 0;
+}
+
+.fade{
+	opacity: 1; /*funciona como alpha de flash*/
+	filter:alpha(opacity=10);/*opacity para IE  esta funciona de 0 a 10*/
+	-ms-transition: all .5s ease-in;/* Internet Explorer*/
+	-moz-transition: all .5s ease-in;/* Firefox*/
+	-o-transition: all .5s ease-in;/* opera*/
+	-webkit-transition: all .5s ease-in;/* Chrome / Safari*/
+	transition: all .5s ease-in;/* CSS3 [atributo afectado] [tiempo en segundos] [easing]*/
+	
+}
+/*el estado hover se puede aplicar a cualquier elemento q al que se le pueda poner  el mouse encima*/
+.fade:hover{
+	opacity: 0.7; /*funciona como alpha de flash*/
+	filter:alpha(opacity=7);/*opacity para IE  esta funciona de 0 a 10*/
+	 -ms-transition: all .5s ease-out;/* Internet Explorer*/
+	-moz-transition: all .5s ease-out;/* Firefox*/
+	-o-transition: all .5s ease-out;/* opera*/
+	-webkit-transition: all .5s ease-out;/* Chrome / Safari*/
+	transition: all .5s ease-out;/* CSS3 [atributo afectado] [tiempo en segundos] [easing]*/
+}
+
+/*Media queries sobre el ancho condicional dentor de @media
+primero maquetar a tamaño completo despues ajustar al dispositivo*/
+@media(min-width:1081px){
+	/*ponerlo horizontal cuando esté mas ancho*/
+	header h1{
+		text-align:left;
+		width: 35%;
+	}
+	
+	nav{
+		text-align: right;
+		width: 60%
+	}
+}
+
+@media(max-width:1080px){
+	
+	nav li{
+		font-size: 1.3em;
+	}
+	
+	article#galeria-inicio{
+		width: 90%
+	}
+	
+	aside{
+		width: 20%;
+	}
+}
+
+@media(max-width:800px){
+	
+	nav li{
+		font-size: 0.95em;
+	}
+	
+	article#galeria-inicio{
+		width: 88%;
+	}
+}
+
+@media(max-width:600px){
+	
+	nav li{
+		display:inline-block;
+		margin: 0px;
+		width: 98%;
+	}
+	section#principal{
+		margin-bottom: 0.2em;
+	}
+	
+	section#principal, aside{
+		display:block; /*ocupar todo el ancho*/
+		width: 95%;
+	}
+}
+

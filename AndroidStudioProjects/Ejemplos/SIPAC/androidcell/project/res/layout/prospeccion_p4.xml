@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/textProspeccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sexo"
+                    android:textColor="#2D73B5"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupSexo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true" >
+
+                        <RadioButton
+                            android:id="@+id/radioButtonF"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.38"
+                            android:text="Femenino"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonM"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.38"
+                            android:text="Masculino"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonA"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.38"
+                            android:text="Ambos"
+                            android:textColor="#000000" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView   
+                    style="@style/textProspeccion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Estado Civil"
+                    android:textColor="#2D73B5"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6" >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupEstado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonTodos"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Todos"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonSoltero"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soltero(a)"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonCasado"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Casado(a)"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDivorciado"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Divorciado(a)"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonViudo"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Viudo(a)"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonUnion"
+                            style="@style/textProspeccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="19dp"
+                            android:layout_weight="1"
+                            android:text="Unión Libre"
+                            android:textColor="#000000" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        
+<!--                 <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginBottom="10dp" -->
+<!--             android:layout_marginLeft="10dp" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView2" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="Edad" -->
+<!--                 android:textColor="#2D73B5" -->
+<!--                 android:textSize="16sp" -->
+<!--                 android:textStyle="bold" /> -->
+
+<!--             <Spinner -->
+<!--                 android:id="@+id/spinner1" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="40dp" -->
+<!--                 android:layout_weight="1" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/editEdadSearch" -->
+<!--                 style="@style/informationText" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="7dp" -->
+<!--                 android:layout_marginRight="7dp" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/textboxskin" -->
+<!--                 android:paddingBottom="7dp" -->
+<!--                 android:paddingLeft="14dp" -->
+<!--                 android:paddingRight="15dp" -->
+<!--                 android:paddingTop="7dp" -->
+<!--                 android:textColor="#818084" -->
+<!--                 android:textSize="12sp" > -->
+
+<!--                 </EditText> -->
+
+<!--         </LinearLayout> -->
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Prima"
+                android:textColor="#2D73B5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerPrima"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editPrimaSearch"
+                style="@style/informationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/textboxskin"
+                android:inputType="numberDecimal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:textColor="#818084"
+                android:textSize="12sp" >
+
+                </EditText>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="BAS"
+                android:textColor="#2D73B5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerBAS"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editBasSearch"
+                style="@style/informationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/textboxskin"
+                android:inputType="numberDecimal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:textColor="#818084"
+                android:textSize="12sp" >
+
+                </EditText>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Fondo de RI"
+                android:textColor="#2D73B5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRI"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editFriSearch"
+                style="@style/informationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/textboxskin"
+                android:inputType="numberDecimal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:textColor="#818084"
+                android:textSize="12sp" >
+
+                </EditText>
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/reporteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/searchbuttonscreen"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="Ver Reporte"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

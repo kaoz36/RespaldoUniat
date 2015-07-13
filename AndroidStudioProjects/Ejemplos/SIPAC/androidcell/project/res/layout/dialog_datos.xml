@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:id="@+id/dialogDatos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_skin" >
+
+    <LinearLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_marginTop="10dp"
+        android1:orientation="vertical" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_marginBottom="15dp" >
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="match_parent"
+                android1:layout_marginLeft="10dp"
+                android1:layout_weight="1"
+                android1:orientation="vertical" >
+
+                <TextView
+                    android1:id="@+id/textView1"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:text="Retenedor"
+                    android1:textAppearance="?android:attr/textAppearanceLarge"
+                    android1:textColor="#000000"
+                    android1:textSize="18sp" />
+
+                <FrameLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/commoneditskin" >
+
+                    <TextView
+                        android1:id="@+id/TextRetenedor"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_gravity="center"
+                        android1:background="@drawable/skinlesstext"
+                        android1:gravity="center"
+                        android1:inputType="text"
+                        android1:textSize="18sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="match_parent"
+                android1:layout_marginRight="10dp"
+                android1:layout_weight="1"
+                android1:orientation="vertical" >
+
+                <TextView
+                    android1:id="@+id/textView2"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginLeft="5dp"
+                    android1:text="No. Empleado"
+                    android1:textAppearance="?android:attr/textAppearanceLarge"
+                    android1:textColor="#000000"
+                    android1:textSize="18sp" />
+
+                <FrameLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginLeft="5dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/commoneditskin"
+                    android1:minWidth="200dp" >
+
+                    <TextView
+                        android1:id="@+id/TextNoEmpleado"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_gravity="left|center_vertical"
+                        android1:layout_margin="10dp"
+                        android1:background="@drawable/skinlesstext"
+                        android1:inputType="text"
+                        android1:textSize="18sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="10dp" >
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="1"
+                android1:orientation="vertical"
+                android1:paddingRight="10dp" >
+
+                <TextView
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginLeft="7dp"
+                    android1:layout_marginRight="7dp"
+                    android1:layout_weight="1"
+                    android1:text="Estátus"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    android1:textColor="#000000"
+                    android1:textSize="18sp" />
+
+                <FrameLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginBottom="15dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/commoneditskin"
+                    android1:minWidth="200dp" >
+
+                    <TextView
+                        android1:id="@+id/TextEstatus"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_gravity="left|center_vertical"
+                        android1:layout_margin="10dp"
+                        android1:background="@drawable/skinlesstext"
+                        android1:inputType="text"
+                        android1:textSize="18sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="10dp" >
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="1"
+                android1:orientation="vertical"
+                android1:paddingRight="10dp" >
+
+                <TextView
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginLeft="7dp"
+                    android1:layout_marginRight="7dp"
+                    android1:layout_weight="1"
+                    android1:text="Nombre completo:"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    android1:textColor="#000000"
+                    android1:textSize="18sp" />
+
+                <FrameLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginBottom="15dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/commoneditskin"
+                    android1:minWidth="200dp" >
+
+                    <TextView
+                        android1:id="@+id/TextNombre"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_gravity="left|center_vertical"
+                        android1:layout_margin="10dp"
+                        android1:background="@drawable/skinlesstext"
+                        android1:inputType="text"
+                        android1:textSize="18sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="10dp" >
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="1"
+                android1:orientation="vertical"
+                android1:paddingRight="10dp" >
+
+                <TextView
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginLeft="7dp"
+                    android1:layout_marginRight="7dp"
+                    android1:layout_weight="1"
+                    android1:text="R.F.C."
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    android1:textColor="#000000"
+                    android1:textSize="18sp" />
+
+                <FrameLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_marginBottom="15dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/commoneditskin"
+                    android1:minWidth="200dp" >
+
+                    <TextView
+                        android1:id="@+id/TextRFC"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_gravity="left|center_vertical"
+                        android1:layout_margin="10dp"
+                        android1:background="@drawable/skinlesstext"
+                        android1:inputType="text"
+                        android1:textSize="18sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android1:id="@+id/closeData"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_gravity="center"
+            android1:layout_marginBottom="10dp"
+            android1:background="@drawable/searchbuttonscreen"
+            android1:paddingBottom="10dp"
+            android1:paddingLeft="40dp"
+            android1:paddingRight="40dp"
+            android1:paddingTop="10dp"
+            android1:text="Cerrar"
+            android1:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

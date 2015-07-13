@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaxiMobile</string>
+    <string name="complete_name">Complete Name</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="number">Phone Number</string>
+    <string name="Save">Save</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_location">Location</string>
+    <string name="skip">Skip</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Borrar Informacion</string>
+    <string name="title_activity_capture">Capture</string>
+    <string name="title_activity_feed_back">FeedBack</string>
+
+</resources>

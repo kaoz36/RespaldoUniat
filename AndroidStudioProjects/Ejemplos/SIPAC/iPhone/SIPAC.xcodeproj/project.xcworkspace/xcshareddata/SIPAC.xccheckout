@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0FFEE0B2-013B-448D-8F9A-DACCD179E434</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SIPAC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D2C3C3EC-AF59-4C41-9309-B17BBC3BCF80</key>
+		<string>http://10.0.0.9/svn/jaguarlabs/SIPAC/iPhone/SIPAC</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SIPAC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D2C3C3EC-AF59-4C41-9309-B17BBC3BCF80</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>D2C3C3EC-AF59-4C41-9309-B17BBC3BCF80</key>
+		<string>http://10.0.0.9/svn/jaguarlabs</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://10.0.0.9/svn/jaguarlabs/SIPAC/iPhone/SIPAC/SIPAC.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D2C3C3EC-AF59-4C41-9309-B17BBC3BCF80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2C3C3EC-AF59-4C41-9309-B17BBC3BCF80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SIPAC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

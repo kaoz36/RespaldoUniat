@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:foregroundGravity="center"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageSplash"
+                android:background="@null"
+                android:src="@mipmap/uniat_logo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="70dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextUser"
+                android:layout_gravity="center_horizontal"
+                style="@style/style_edittext_back"
+                android:textSize="20dp"
+                android:text="julio.hernandez"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:inputType="textPersonName"
+                android:hint="@string/text_hint_user" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/editTextPass"
+                android:layout_gravity="center_horizontal"
+                style="@style/style_edittext_back"
+                android:text="Abcd1234"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:hint="@string/text_hint_pass"
+                android:layout_marginBottom="30dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_salir"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:id="@+id/btnSalir"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/selector_btn"
+                    android:onClick="onClickSalir"
+                    android:padding="8dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_entrar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:id="@+id/btnEntrar"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn"
+                    android:onClick="onClickLogin"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

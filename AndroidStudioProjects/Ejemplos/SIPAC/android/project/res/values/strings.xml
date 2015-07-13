@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIPAC</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_text">Buscar</string>
+    <string name="login_text">Ingresar</string>
+    <string name="search_hint">Nombre | Póliza | RFC</string>
+    <string name="user_hint">Usuario</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="row_header_id">Poliza</string>
+    <string name="row_header_nombre">Nombre</string>
+    <string name="row_header_rfc">RFC</string>
+    <string name="row_header_unidad">Unidad de Pago</string>
+    <string name="row_header_prima">Prima</string>
+    <string name="row_header_quincena"><![CDATA[Última quincena de pago]]></string>
+</resources>

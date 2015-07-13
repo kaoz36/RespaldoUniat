@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XLR8</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_activity_inner_compass">InnerCompassActivity</string>
+    <string name="title_Inner_Compass">My Inner-Compass</string>
+    <string name="Inner_Compass_String">A map can show you where other have been a compass this will
+        guide you as you navigate you own path</string>
+    <string name="title_activity_missions">My Mission</string>
+    <string name="title_activity_new_mission">NewMissionActivity</string>
+    <string name="show_information_questions">Show information questions</string>
+    <string name="text_show_information_question">If it weren’t for money, time and circumstance, what would I really like to do with my life?   What did I love to do that I did really well in my childhood?   What would I love to be doing in my life right now?   What would I love to do that would improve other people’s lives and increase my self-respect and fulfillment?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_show_mission">ShowMissionActivity</string>
+    <string name="title_show_mission">Mission</string>
+    <string name="URL_NewMission"><u>URL Worksheets</u></string>
+    <string name="title_activity_history_mission">HistoryMissionActivity</string>
+    <string name="title_history_mission">History mission</string>
+    <string name="title_activity_edit_mission">EditMissionActivity</string>
+    <string name="title_edit_mission">Edit mission</string>
+    <string name="title_activity_set_reminder">Set reminder</string>
+
+</resources>

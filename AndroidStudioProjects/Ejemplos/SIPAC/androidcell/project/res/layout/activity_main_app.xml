@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false">
+
+	<FrameLayout 
+	    android:id="@+id/menuLayout"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="fill_parent"  >
+	 	<fragment 
+	 		android:id="@+id/menuFragment"
+   	    	android:layout_width="wrap_content"
+   	    	android:layout_height="fill_parent"
+   	    	class="com.jaguarlabs.sipaccel.fragment.MenuFragment">
+   	    
+   		</fragment>
+	    
+	</FrameLayout>
+   	   	
+   	 <FrameLayout android:id="@+id/contentFragment"
+   	    		android:layout_width="fill_parent"
+   	    		android:layout_height="match_parent">
+   	    
+   	</FrameLayout>
+
+</RelativeLayout>

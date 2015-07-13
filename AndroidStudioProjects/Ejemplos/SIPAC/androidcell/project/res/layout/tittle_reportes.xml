@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#4972B1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/plan"
+            style="@style/tittleReportesInfo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Plan" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/poliza"
+            style="@style/tittleReportesInfo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Poliza" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/nombre"
+            style="@style/tittleReportesInfo"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Nombre" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/edad"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Edad" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/primaM"
+            style="@style/tittleReportesInfo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Prima" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/bas"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="BAS" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/cma"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="CMA" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tiba"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="TIBA" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/cii"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="CII" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/bac"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="BAC" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/cat"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="CAT" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/bacy"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="BACY" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/gfa"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="GFA" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/bit"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="BIT" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/exc"
+            style="@style/tittleReportesInfo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="EXC" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/gfc"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="GFC" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/gfh"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="GFH" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ge"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="GE" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/catp"
+            style="@style/tittleReportesInfo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="CATP" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/zona"
+            style="@style/tittleReportesInfo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Zona" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/f_emi"
+            style="@style/tittleReportesInfo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="F.emi" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/f_u_vta"
+            style="@style/tittleReportesInfo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="F.u.vta" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/f_2216"
+            style="@style/tittleReportesInfo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="F.2216" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/res_dis"
+            style="@style/tittleReportesInfo"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Res. Dis." />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/inversion"
+            style="@style/tittleReportesInfo"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Inversión" />
+
+        <FrameLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#D4D0C8" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/municipio"
+            style="@style/tittleReportesInfo"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Municipio" />
+
+    </LinearLayout>
+    
+
+</HorizontalScrollView>

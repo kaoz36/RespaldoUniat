@@ -1,0 +1,151 @@
+package com.uniat.eduscore.dialogs;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.uniat.eduscore.db.CommonDAO;
+import com.uniat.eduscore.db.EduscoreOpenHelper;
+import com.uniat.eduscore.fragments.NewAspiranteFragment;
+import com.uniat.eduscore.util.DismissDialog;
+import com.uniat.eduscore.util.ItemInterest;
+import com.uniat.eduscore.vo.CareerTypeVO;
+import com.uniat.eduscore.vo.CareerVO;
+import com.university3dmx.eduscore.R;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * Created by Admin on 10/04/2015.
+ */
+public class InterestDialog extends DismissDialog {
+
+    private TextView textInterest;
+    private Button btnAcep;
+    private String[] typesCareers;
+    private String[] idTypesCareers;
+    private ViewGroup groupInterest;
+    private static ArrayList<ItemInterest> arrayInterests;
+
+    public InterestDialog(Context context, TextView textInterest){
+        super(context);
+        this.textInterest = textInterest;
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        setContentView(R.layout.dialog_interest);
+        init();
+        setListeners();
+        generateListInterest();
+    }
+
+    private void init(){
+        btnAcep = (Button) this.findViewById(R.id.btnAceptar);
+        idTypesCareers = getIdTypeCareers();
+        typesCareers = getTypeCareers();
+        groupInterest = (ViewGroup) this.findViewById(R.id.interesesContainer);
+        arrayInterests = new ArrayList<ItemInterest>();
+    }
+
+    private void generateListInterest(){
+        for( int i = 0; i < typesCareers.length; i++ ){
+            final ViewGroup title = (ViewGroup) LayoutInflater.from(getContext()).inflate(
+                    R.layout.item_title_interest, groupInterest, false);
+            TextView textTitle = (TextView) title.findViewById(R.id.TextViewTitleInterest);
+            textTitle.setText(typesCareers[i]);
+            String[] interesesId = getInterestIds(idTypesCareers[i]);
+            String[] interesesName = getInterestNames(idTypesCareers[i]);
+            groupInterest.addView(title);
+            for(int j = 0; j < interesesName.length; j++){
+                final ViewGroup newInterest = (ViewGroup) LayoutInflater.from(getContext()).inflate(
+                        R.layout.item_interest, groupInterest, false);
+                final ImageButton imgBtnCheck = (ImageButton) newInterest.findViewById(R.id.chekInterest);
+                TextView textInterest = (TextView) newInterest.findViewById(R.id.TextViewInterest);
+                textInterest.setText(interesesName[j]);
+                ItemInterest interes = new ItemInterest(interesesId[j], interesesName[j], imgBtnCheck, textInterest, false);
+                arrayInterests.add(interes);
+                groupInterest.addView(newInterest);
+            }
+
+        }
+    }
+
+    private void setListeners(){
+        btnAcep.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        View dialogPicker = findViewById(R.id.dialogPicker);
+        textInterest.setText("");
+        for( int i = arrayInterests.size() - 1; i > 0; i-- ){
+            if( arrayInterests.get(i).isStatus() ){
+                textInterest.setText(arrayInterests.get(i).getName() + ", " +textInterest.getText().toString());
+                NewAspiranteFragment.mthis.listIntereses.add(arrayInterests.get(i).getId());
+            }
+        }
+        textInterest.setText( String.copyValueOf(textInterest.getText().toString().toCharArray(), 0,
+                textInterest.getText().toString().length() - 2));
+        super.dismiss(dialogPicker);
+    }
+
+    private String[] getTypeCareers(){
+        List<CareerTypeVO> careerTypeVO = new ArrayList<CareerTypeVO>();
+        CommonDAO<CareerTypeVO> careerTypeDAO = new CommonDAO<CareerTypeVO>(getContext(), CareerTypeVO.class, EduscoreOpenHelper.TABLE_ESC_CAREERTYPE);
+        careerTypeDAO.open();
+        String sql = "SELECT * FROM " + EduscoreOpenHelper.TABLE_ESC_CAREERTYPE + " WHERE status = '1' GROUP BY name" ;
+        careerTypeVO = careerTypeDAO.runQuery( sql );
+        String[] types = new String[careerTypeVO.size()];
+        for (int i = 0; i < types.length; i++){
+            types[i] = careerTypeVO.get(i).getName();
+        }
+        return types;
+    }
+
+    private String[] getIdTypeCareers(){
+        List<CareerTypeVO> careerTypeVO = new ArrayList<CareerTypeVO>();
+        CommonDAO<CareerTypeVO> careerTypeDAO = new CommonDAO<CareerTypeVO>(getContext(), CareerTypeVO.class, EduscoreOpenHelper.TABLE_ESC_CAREERTYPE);
+        careerTypeDAO.open();
+        String sql = "SELECT * FROM " + EduscoreOpenHelper.TABLE_ESC_CAREERTYPE + " WHERE status = '1' GROUP BY name" ;
+        careerTypeVO = careerTypeDAO.runQuery( sql );
+        String[] types = new String[careerTypeVO.size()];
+        for (int i = 0; i < types.length;i++){
+            types[i] = careerTypeVO.get(i).getIdCareerType();
+        }
+        return types;
+    }
+
+    private String[] getInterestIds(String type){
+        List<CareerVO> materiasVO = new ArrayList<CareerVO>();
+        CommonDAO<CareerVO> careerDAO = new CommonDAO<CareerVO>(getContext(), CareerVO.class, EduscoreOpenHelper.TABLE_ESC_CAREER);
+        careerDAO.open();
+        String sql = "SELECT * FROM " + EduscoreOpenHelper.TABLE_ESC_CAREER + " WHERE idCareerType = '" + type + "' AND prefix = '1' GROUP BY name";//prefix == status
+        materiasVO = careerDAO.runQuery( sql );
+        String[] materias = new String[materiasVO.size()];
+        for (int i = 0; i < materias.length; i++){
+            materias[i] = materiasVO.get(i).getIdCareer();
+        }
+        return materias;
+    }
+
+    private String[] getInterestNames(String type){
+        List<CareerVO> materiasVO = new ArrayList<CareerVO>();
+        CommonDAO<CareerVO> careerDAO = new CommonDAO<CareerVO>(getContext(), CareerVO.class, EduscoreOpenHelper.TABLE_ESC_CAREER);
+        careerDAO.open();
+        String sql = "SELECT * FROM " + EduscoreOpenHelper.TABLE_ESC_CAREER + " WHERE idCareerType = '" + type + "' AND prefix = '1' GROUP BY name";//prefix == status
+        materiasVO = careerDAO.runQuery( sql );
+        String[] materias = new String[materiasVO.size()];
+        for (int i = 0; i < materias.length; i++){
+            materias[i] = materiasVO.get(i).getName();
+        }
+        return materias;
+    }
+}

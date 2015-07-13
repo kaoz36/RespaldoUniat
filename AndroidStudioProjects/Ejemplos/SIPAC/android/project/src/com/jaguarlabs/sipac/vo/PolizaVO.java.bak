@@ -1,0 +1,489 @@
+package com.jaguarlabs.sipac.vo;
+
+import android.database.Cursor;
+
+public class PolizaVO implements  ICursorDecoder {
+	private long id;
+	private String nombre;
+	private String rfc;
+	private String unidadPago;
+	private long prima;
+	private String quincena;
+	
+	private String status;
+	private String retenedor;
+	private String empleado;
+	private String sexo;
+	private String fuma;
+	private String fechaNacimiento;
+	private String calle;
+	private long nExterior;
+	private long nInterior;
+	private String cp;
+	private String telefono;
+	private String poblacion;
+	private String colonia;
+	private String email;
+	private String estadoCivil;
+
+
+	private long primaPagada;
+	private long reserva;
+	private long inversion;
+	private long primaPendiente;
+	private String recibosPendientes;
+	private long ultimoPago;
+	private long primaEmitida;
+	private long primaQuincenal;
+	private String inicioVigencia;
+	private String ultMod;
+	private String ultRetiro;
+	private String ordenPago;
+	private String monto;
+	
+	private String cheque;
+	private String referencia;
+	
+	private String primaEsp;
+	private String primaDesc;
+	
+	private String cpto;
+	private String subRet;
+	private String cveCob;
+	private String ultPag;
+	private String tipoMov;
+	
+	
+	
+	public PolizaVO(long id, String nombre, String rfc, String unidadPago,
+			long prima, String quincena) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.rfc = rfc;
+		this.unidadPago = unidadPago;
+		this.prima = prima;
+		this.quincena = quincena;
+	}
+	
+	public PolizaVO() {
+		super();
+	}
+
+	public String getData(int pIndex) {
+		switch (pIndex) {
+			case 0:
+				return ""+getId();
+			case 1:
+				return getNombre();
+			case 2:
+				return getRfc();
+			case 3:
+				return getUnidadPago();
+			case 4:
+				return ""+getPrima();
+			case 5:
+				return getQuincena();
+			case 6:
+				return getRetenedor();
+			case 7:
+				return ""+getPrima();
+		}
+		return "";
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getRfc() {
+		return rfc;
+	}
+
+	public void setRfc(String rfc) {
+		this.rfc = rfc;
+	}
+
+	public String getUnidadPago() {
+		return unidadPago;
+	}
+
+	public void setUnidadPago(String unidadPago) {
+		this.unidadPago = unidadPago;
+	}
+
+	public long getPrima() {
+		return prima;
+	}
+
+	public void setPrima(long prima) {
+		this.prima = prima;
+	}
+
+	public String getQuincena() {
+		return quincena;
+	}
+
+	public void setQuincena(String quincena) {
+		this.quincena = quincena;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getRetenedor() {
+		return retenedor;
+	}
+
+	public void setRetenedor(String retenedor) {
+		this.retenedor = retenedor;
+	}
+
+	public String getEmpleado() {
+		return empleado;
+	}
+
+	public void setEmpleado(String empleado) {
+		this.empleado = empleado;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getFuma() {
+		return fuma;
+	}
+
+	public void setFuma(String fuma) {
+		this.fuma = fuma;
+	}
+
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public String getCalle() {
+		return calle;
+	}
+
+	public void setCalle(String calle) {
+		this.calle = calle;
+	}
+
+	public long getnExterior() {
+		return nExterior;
+	}
+
+	public void setnExterior(long nExterior) {
+		this.nExterior = nExterior;
+	}
+
+	public long getnInterior() {
+		return nInterior;
+	}
+
+	public void setnInterior(long nInterior) {
+		this.nInterior = nInterior;
+	}
+
+	public String getCp() {
+		return cp;
+	}
+
+	public void setCp(String cp) {
+		this.cp = cp;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getPoblacion() {
+		return poblacion;
+	}
+
+	public void setPoblacion(String poblacion) {
+		this.poblacion = poblacion;
+	}
+
+	public String getColonia() {
+		return colonia;
+	}
+
+	public void setColonia(String colonia) {
+		this.colonia = colonia;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public long getPrimaPagada() {
+		return primaPagada;
+	}
+
+	public void setPrimaPagada(long primaPagada) {
+		this.primaPagada = primaPagada;
+	}
+
+	public long getReserva() {
+		return reserva;
+	}
+
+	public void setReserva(long reserva) {
+		this.reserva = reserva;
+	}
+
+	public long getInversion() {
+		return inversion;
+	}
+
+	public void setInversion(long inversion) {
+		this.inversion = inversion;
+	}
+
+	public long getPrimaPendiente() {
+		return primaPendiente;
+	}
+
+	public void setPrimaPendiente(long primaPendiente) {
+		this.primaPendiente = primaPendiente;
+	}
+
+	public String getRecibosPendientes() {
+		return recibosPendientes;
+	}
+
+	public void setRecibosPendientes(String recibosPendientes) {
+		this.recibosPendientes = recibosPendientes;
+	}
+
+	public long getUltimoPago() {
+		return ultimoPago;
+	}
+
+	public void setUltimoPago(long ultimoPago) {
+		this.ultimoPago = ultimoPago;
+	}
+
+	public long getPrimaEmitida() {
+		return primaEmitida;
+	}
+
+	public void setPrimaEmitida(long primaEmitida) {
+		this.primaEmitida = primaEmitida;
+	}
+
+	public long getPrimaQuincenal() {
+		return primaQuincenal;
+	}
+
+	public void setPrimaQuincenal(long primaQuincenal) {
+		this.primaQuincenal = primaQuincenal;
+	}
+
+	public String getInicioVigencia() {
+		return inicioVigencia;
+	}
+
+	public void setInicioVigencia(String inicioVigencia) {
+		this.inicioVigencia = inicioVigencia;
+	}
+
+	public String getUltMod() {
+		return ultMod;
+	}
+
+	public void setUltMod(String ultMod) {
+		this.ultMod = ultMod;
+	}
+
+	public String getUltRetiro() {
+		return ultRetiro;
+	}
+
+	public void setUltRetiro(String ultRetiro) {
+		this.ultRetiro = ultRetiro;
+	}
+
+	public String getOrdenPago() {
+		return ordenPago;
+	}
+
+	public void setOrdenPago(String ordenPago) {
+		this.ordenPago = ordenPago;
+	}
+
+	public String getMonto() {
+		return monto;
+	}
+
+	public void setMonto(String monto) {
+		this.monto = monto;
+	}
+
+	public String getCheque() {
+		return cheque;
+	}
+
+	public void setCheque(String cheque) {
+		this.cheque = cheque;
+	}
+
+	public String getReferencia() {
+		return referencia;
+	}
+
+	public void setReferencia(String referencia) {
+		this.referencia = referencia;
+	}
+
+	public String getPrimaEsp() {
+		return primaEsp;
+	}
+
+	public void setPrimaEsp(String primaEsp) {
+		this.primaEsp = primaEsp;
+	}
+
+	public String getPrimaDesc() {
+		return primaDesc;
+	}
+
+	public void setPrimaDesc(String primaDesc) {
+		this.primaDesc = primaDesc;
+	}
+
+	public String getCpto() {
+		return cpto;
+	}
+
+	public void setCpto(String cpto) {
+		this.cpto = cpto;
+	}
+
+	public String getSubRet() {
+		return subRet;
+	}
+
+	public void setSubRet(String subRet) {
+		this.subRet = subRet;
+	}
+
+	public String getCveCob() {
+		return cveCob;
+	}
+
+	public void setCveCob(String cveCob) {
+		this.cveCob = cveCob;
+	}
+
+	public String getUltPag() {
+		return ultPag;
+	}
+
+	public void setUltPag(String ultPag) {
+		this.ultPag = ultPag;
+	}
+
+	public String getTipoMov() {
+		return tipoMov;
+	}
+
+	public void setTipoMov(String tipoMov) {
+		this.tipoMov = tipoMov;
+	}
+
+	public String getEstadoCivil() {
+		return estadoCivil;
+	}
+
+	public void setEstadoCivil(String estadoCivil) {
+		this.estadoCivil = estadoCivil;
+	}
+	
+	@Override
+	public void decode(Cursor pCursor) {
+		setId(pCursor.getInt(0));
+		setStatus(pCursor.getString(1));
+		setRetenedor(pCursor.getString(2));
+		setNombre(pCursor.getString(3));
+		setRfc(pCursor.getString(4));
+		setEmpleado(pCursor.getString(5));
+		setSexo(pCursor.getString(6));
+		setFuma(pCursor.getString(7));
+		setFechaNacimiento(pCursor.getString(8));
+		setCalle(pCursor.getString(9));
+		setnExterior(pCursor.getLong(10));
+		setnInterior(pCursor.getLong(11));
+		setCp(pCursor.getString(12));
+		setTelefono(pCursor.getString(13));
+		setPoblacion(pCursor.getString(14));
+		setColonia(pCursor.getString(15));
+		setEmail(pCursor.getString(16));
+		setPrimaPagada(pCursor.getLong(17));
+		setReserva(pCursor.getLong(18));
+		setInversion(pCursor.getLong(19));
+		setPrimaPendiente(pCursor.getLong(20));
+		setRecibosPendientes(pCursor.getString(21));
+		setUltimoPago(pCursor.getLong(22));
+		setPrimaEmitida(pCursor.getLong(23));
+		setPrimaQuincenal(pCursor.getLong(24));
+		setInicioVigencia(pCursor.getString(25));
+		setUltMod(pCursor.getString(26));
+		setUltRetiro(pCursor.getString(27));
+		setOrdenPago(pCursor.getString(28));
+		setMonto(pCursor.getString(29));
+		setCheque(pCursor.getString(30));
+		setReferencia(pCursor.getString(31));
+		setPrima(pCursor.getLong(32));
+		setPrimaEsp(pCursor.getString(33));
+		setPrimaDesc(pCursor.getString(34));
+		setCpto(pCursor.getString(35));
+		setSubRet(pCursor.getString(36));
+		setCveCob(pCursor.getString(37));
+		setUnidadPago(pCursor.getString(38));
+		setQuincena(pCursor.getString(39));
+		setTipoMov(pCursor.getString(40));
+	}
+
+	
+	
+	
+	
+
+}

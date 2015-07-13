@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screenbackground" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/navbarskin"
+         android:gravity="center_vertical"
+         android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/back"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight=".2"
+	            android:background="@drawable/backbuttonskin" />
+	
+	        <TextView
+	            style="@style/titleText"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:text="Geolocalización" />
+	        
+	        <Spinner
+             android:id="@+id/spinner1"
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:layout_centerHorizontal="true"
+             android:background="@null" />
+	        
+	        <ImageButton
+	            android:id="@+id/listPromo"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_weight=".2"
+	            android:background="@null"
+	            android:src="@drawable/promotorias_list" />
+	        
+	    </LinearLayout>
+<!--  
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <fragment
+             android:id="@+id/map"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             class="com.google.android.gms.maps.MapFragment" />
+
+         <ImageView
+             android:id="@+id/imageHelp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/img_localizatuto" />
+         
+     </RelativeLayout>-->
+     
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#FFFFFFFF" >
+		 
+        <fragment
+             android:id="@+id/map"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             class="com.google.android.gms.maps.MapFragment" />
+         
+         <ImageView
+            android:id="@+id/map_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+         <ImageView
+             android:id="@+id/imageHelp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/img_localizatuto" />
+
+     </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/idCobertura"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="15sp" />
+    
+    <View android:layout_height="fill_parent"
+        android:layout_width="3dp" 
+        android:background="#D4D0C8" />
+
+    <TextView
+        android:id="@+id/prima"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="15sp" />
+    
+     <View android:layout_height="fill_parent"
+        android:layout_width="3dp" 
+        android:background="#D4D0C8" />
+
+      <TextView
+          android:id="@+id/primaExtra"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:textColor="#000000"
+          android:textIsSelectable="false"
+          android:textSize="15sp" />
+      
+      <View android:layout_height="fill_parent"
+        android:layout_width="3dp" 
+        android:background="#D4D0C8" />
+
+      <TextView
+          android:id="@+id/primaAsegurada"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:textColor="#000000"
+          android:textIsSelectable="false"
+          android:textSize="15sp" />
+
+</LinearLayout>

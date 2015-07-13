@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaguarlabs.xlr8"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.jaguarlabs.xlr8.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.HomePageActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.InnerCompassActivity"
+            android:label="@string/title_activity_inner_compass"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.MissionsActivity"
+            android:label="@string/title_activity_missions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.NewMissionActivity"
+            android:label="@string/title_activity_new_mission"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.ShowMissionActivity"
+            android:label="@string/title_activity_show_mission"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.HistoryMissionActivity"
+            android:label="@string/title_activity_history_mission"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.EditMissionActivity"
+            android:label="@string/title_activity_edit_mission" >
+        </activity>
+        <activity
+            android:name="com.jaguarlabs.xlr8.SetReminderActivity"
+            android:label="@string/title_activity_set_reminder" >
+        </activity>
+    </application>
+
+</manifest>

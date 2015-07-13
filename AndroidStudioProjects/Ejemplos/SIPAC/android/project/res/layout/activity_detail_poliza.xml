@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jaguarlabs.sipac"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screenbackground" >
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarskin"
+        android:gravity="center_vertical"
+        >
+        <Button  android:layout_width="50dp"
+            android:layout_height="fill_parent" 
+            android:background="@drawable/backbuttonskin"
+            android:onClick = "onClickHandler"/>
+        <TextView android:text="Detalles de la Póliza" style="@style/titleText"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:padding="10dp">
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingRight="7dp">
+			
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#000000"
+			            	  android:textSize="20dp"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:text="Poliza"/>
+			        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="3"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#000000"
+			            	  android:textSize="20dp"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:text="Estátus"/>
+			    </LinearLayout>
+			    <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:layout_height="wrap_content"
+			            	  android:id="@+id/idText"/>
+			        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="3"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:layout_height="wrap_content"
+			            	  android:id="@+id/statusText"/>
+			        
+			        
+			    </LinearLayout>
+			     <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#000000"
+			            	  android:textSize="20dp"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:text="Retenedor"/>
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="2"
+			            	  android:textColor="#000000"
+			            	  android:textSize="20dp"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:layout_height="wrap_content"
+			            	  android:text="Nombre Completo"/>
+			        
+			    </LinearLayout>
+			    <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:layout_height="wrap_content"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:id="@+id/retenedorText"/>
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="2"
+			            	  android:layout_height="wrap_content"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:id="@+id/nombreText"/>
+			    </LinearLayout>
+			    <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">		        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#000000"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:textSize="20dp"
+			            	  android:text="No. Empleado"/>
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="2"
+			            	  android:layout_height="wrap_content"
+			            	  android:textColor="#000000"
+			            	  android:textSize="20dp"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:text="RFC"/>
+			        
+			    </LinearLayout>
+			    <LinearLayout 
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="1"
+			            	  android:layout_height="wrap_content"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:id="@+id/empleadoText"/>
+			        
+			        <TextView android:layout_width="0dp" 
+			            	  android:layout_weight="2"
+			            	  android:layout_height="wrap_content"
+			            	  android:background="@drawable/textboxskin"
+			            	  android:paddingTop="7dp" android:paddingBottom="7dp"
+			            	  android:paddingLeft="14dp" android:paddingRight="15dp"
+			            	  android:textSize="22dp" android:textColor="#818084"
+			            	  android:layout_marginRight="7dp"
+			            	  android:layout_marginLeft="7dp"
+			            	  android:id="@+id/rfcText"/>
+			        
+			    </LinearLayout>
+			    
+	        </LinearLayout>
+	        
+			<ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:contentDescription="Logo Nuvem"
+			    android:src="@drawable/img_logo" >
+			    
+			</ImageView>
+		</LinearLayout>  
+		<View android:layout_height="33dp" android:layout_width="match_parent"/>  
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_horizontal"
+	        android:orientation="horizontal" 
+	        android:baselineAligned="false">
+	        
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:id="@+id/flipControllerHolder"
+	            android:layout_weight="1" >
+	        
+	        <ViewFlipper
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/pageskin"
+	            android:id="@+id/flipController">   
+	        </ViewFlipper> 
+	    </RelativeLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="12"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical" >
+	        	
+		        <com.jaguarlabs.sipac.components.VerticalButton
+		            android:id="@+id/generalButton"
+		            style="@style/tabButton"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center"
+		            android:layout_weight="1"
+		            android:onClick="tabClick"
+		            android:text="General" />
+	
+		        <com.jaguarlabs.sipac.components.VerticalButton
+		            android:id="@+id/ventasButton"
+		            style="@style/tabButton"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center"
+		            android:layout_weight="1"
+		            android:onClick="tabClick"
+		            android:text="Ventas" />
+		        
+		        <com.jaguarlabs.sipac.components.VerticalButton
+		            android:id="@+id/serviciosButton"
+		            style="@style/tabButton"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center"
+		            android:layout_weight="1"
+		            android:onClick="tabClick"
+		            android:text="Servicios" />
+		        
+		        <com.jaguarlabs.sipac.components.VerticalButton
+		            android:id="@+id/cobranzasButton"
+		            style="@style/tabButton"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center"
+		            android:layout_weight="1"
+		            android:gravity="bottom|center"
+		            android:onClick="tabClick"
+		            android:text="Cobranzas" />
+	
+		</LinearLayout>
+	   
+	    
+	    </LinearLayout>
+    
+   </LinearLayout>
+       
+       
+    
+    
+
+</LinearLayout>

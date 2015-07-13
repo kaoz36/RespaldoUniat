@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="odd_row">#EEEEED</color>
+    <color name="even_row">#849ECE</color>
+    <color name="wrong_range">#CC0000</color>
+    <color name="correct_range">#000000</color>
+</resources>

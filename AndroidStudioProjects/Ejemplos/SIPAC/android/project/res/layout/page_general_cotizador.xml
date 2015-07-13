@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_margin="13dp" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow"
+	           android:background="#FFEFEEED">
+	           <TextView  android:layout_weight="1"
+	               		  android:layout_width="0dp"
+					      android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+					      android:layout_height="wrap_content"
+						  style="@style/blackinfotext"
+						  android:text="Producto" /> 
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	          <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" android:paddingLeft="10dp">
+	           <TextView 
+			          android:imeOptions="actionDone"
+                   	  android:layout_width="wrap_content"
+                   	  android:text="MET99"
+	            	  style="@style/blackforminput"  android:enabled="false"/> 
+	             
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	        <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow"
+	           android:background="#FFEFEEED">
+	           <TextView  android:layout_weight="1"
+					      android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+					      android:layout_height="wrap_content"
+						  style="@style/blackinfotext"
+						  android:text="Tipo de cotizacion" /> 
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	        
+	        <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" android:paddingLeft="10dp">
+	            <RadioGroup 
+                  android:id="@+id/radioTipoCobertura"
+            	  android:layout_width="fill_parent" 
+            	  android:layout_height="wrap_content"
+            	  android:orientation="horizontal" >
+	                 <RadioButton
+	                  android:id="@+id/radioNueva"
+	                  style="@style/blackinfotext"
+	                  android:layout_width="0dp"
+	                  android:layout_weight="1" 
+            	  	  android:layout_height="wrap_content"
+	                  android:text="Nueva Póliza" 
+	                  android:checked="true" />
+	                 <RadioButton
+	                  android:id="@+id/radioInclusiones"
+	                  style="@style/blackinfotext" 
+	                  android:layout_width="0dp"
+	                  android:layout_weight="1"  
+	            	  android:layout_height="wrap_content"
+	                  android:text="Inclusiones e Incrementos" />
+                 </RadioGroup>
+	             
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	        
+	        <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow"
+	           android:background="#FFEFEEED">
+	           <TextView  android:layout_weight="1"
+					      android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+					      android:layout_height="wrap_content"
+						  style="@style/blackinfotext"
+						  android:text="Coberturas" /> 
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	        <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" android:paddingLeft="10dp"
+	           android:paddingBottom="10dp" android:paddingTop="10dp">
+	            <RadioGroup 
+                  android:id="@+id/radioCoberturas"
+            	  android:layout_width="fill_parent" 
+            	  android:layout_height="wrap_content"
+            	  android:orientation="horizontal" >
+	                 <RadioButton
+	                  android:id="@+id/radiodevolucion"
+	                  style="@style/blackinfotext"
+	                  android:layout_width="0dp"
+	                  android:layout_weight="1" 
+            	  	  android:layout_height="wrap_content"
+	                  android:text="Con Devolución de Primas" 
+	                  android:checked="true" />
+	                 <RadioButton
+	                  android:id="@+id/radioSinDevolucion"
+	                  style="@style/blackinfotext" 
+	                  android:layout_width="0dp"
+	                  android:layout_weight="1"  
+	            	  android:layout_height="wrap_content"
+	                  android:text="Sin Devolución de Primas" />
+                 </RadioGroup>
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	         <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" android:paddingLeft="10dp" 
+	           android:paddingBottom="10dp" android:paddingTop="10dp">
+	            
+	             	<TextView 
+				         android:layout_width="0dp"
+		                  android:layout_weight="1" 
+		                  android:text="Forma de Cálculo:"
+		                  style="@style/blackinfotext" 
+		                  android:gravity="right"
+		                  android:layout_marginRight="5dp"
+		            	  android:layout_height="wrap_content" />
+	             	
+			        <Spinner android:id="@+id/calculoSpinner"
+				         android:layout_width="0dp"
+		                  android:layout_weight="1" 
+		            	  android:layout_height="wrap_content" />
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	         <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" 
+	           android:paddingLeft="10dp" android:paddingBottom="10dp" 
+	           android:paddingTop="10dp">
+	            
+	             	<TextView 
+				         android:layout_width="0dp"
+		                  android:layout_weight="1" 
+		                  android:text="Forma de Pago:"
+		                  style="@style/blackinfotext" 
+		                  android:gravity="right"
+		                  android:layout_marginRight="5dp"
+		            	  android:layout_height="wrap_content" />
+	             	
+			        <Spinner android:id="@+id/pagoSpinner"
+				         android:layout_width="0dp"
+		                  android:layout_weight="1" 
+		            	  android:layout_height="wrap_content" />
+	        </LinearLayout>
+	        <View style="@style/Divider"/>
+	        <LinearLayout android:layout_width="fill_parent" 
+	           android:orientation="horizontal"  
+	           android:gravity="center_vertical"
+	           android:layout_height="wrap_content" style="@style/cotizadorrow" 
+	           android:paddingLeft="10dp" 
+	           android:paddingBottom="10dp" android:paddingTop="10dp">
+	            
+	             	<TextView 
+				         android:layout_width="0dp"
+		                  android:layout_weight="1" 
+		                  android:text="Salario Mínimo Diario:"
+		                  style="@style/blackinfotext" 
+		                  android:gravity="right"
+		                  android:layout_marginRight="5dp"
+		            	  android:layout_height="wrap_content" />
+	             	
+			         <EditText 
+			          android:imeOptions="actionDone"
+                   	  android:layout_width="0dp"
+		              android:layout_weight="1" 
+                   	  android:text="56.72"
+	            	  style="@style/blackforminput"  android:enabled="false"/> 
+	        </LinearLayout>
+	         <View style="@style/Divider"/>
+	  </LinearLayout>
+</ScrollView>

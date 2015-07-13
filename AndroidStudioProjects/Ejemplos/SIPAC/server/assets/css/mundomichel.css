@@ -1,0 +1,93 @@
+body{
+	background: #328fa0;
+	color: #FFF;
+	font-family: Helvetica, Verdana; /* fuentes no seguras con comillas */
+	font-size: 1em;
+}
+
+header{
+	background: #111;
+	font-size: .8em;
+	min-width: 800px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	
+}
+
+footer{
+	background: #EEE;
+	bottom: 0;
+	color: #000;
+	font-size: .8em;
+	min-width: 800px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 110;
+
+}
+
+.contentHolder{
+	height: 100%;
+	margin: 0 auto;
+	max-width: 90%;
+	min-height: 36px;
+	min-width: 780px;
+	padding: 1px;
+	text-align: left;
+}
+
+.horizontalItem{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.iconButton{
+	margin-right: 0 .3em;
+	border-style: none;
+	cursor: pointer;
+	min-width: 50px;
+	padding: 0 .6em;
+}
+
+.iconButton:hover{
+	color: #333;
+	background-color: #EEE;
+}
+
+.iconButton img{
+	width: 32px;
+	height: 32px;
+	margin-right: .5em;
+}
+
+.loadingAnim{
+	width: 15px;
+	height: 15px;
+}
+
+.legalText{
+	text-align: center;
+}
+
+#loginLink{
+	float: right;
+}
+
+#mainContentHolder {
+    bottom: 44px;
+    min-width: 800px;
+    overflow: auto;
+    position: absolute;
+    top: 44px;
+    width: 100%;
+}
+
+#mainContent{
+	margin: 0 auto;
+	max-width: 90%;
+}

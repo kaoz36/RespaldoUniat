@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/shadowskin"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp" >
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="17dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Póliza"
+            android:textColor="#849ECE"
+            android:textIsSelectable="false"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idPoliza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <View android:layout_height="fill_parent"
+        android:layout_width="4dp" 
+        android:background="#4972B1" />
+     <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        >
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="Nombre"
+             android:textColor="#849ECE"
+             android:textIsSelectable="false"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Retenedor"
+            android:textColor="#849ECE"
+            android:textIsSelectable="false"
+            android:textSize="12dp" />
+         
+         <TextView
+             android:id="@+id/retenedor"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:gravity="center"
+             android:textColor="#5479B6"
+             android:textIsSelectable="false"
+             android:textSize="12sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="Prima"
+             android:textColor="#849ECE"
+             android:textIsSelectable="false"
+             android:textSize="12dp" />
+         
+          <TextView
+              android:id="@+id/positivonegativo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:textColor="#000000"
+              android:textIsSelectable="false"
+              android:textSize="12dp"
+              android:textStyle="bold" />
+         
+    </LinearLayout>
+    <View android:layout_height="fill_parent"
+        android:layout_width="4dp" 
+        android:background="#4972B1" />
+    
+     <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        >
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="R.F.C."
+             android:textColor="#849ECE"
+             android:textIsSelectable="false"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rfc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Unidad de pago"
+            android:textColor="#849ECE"
+            android:textIsSelectable="false"
+            android:textSize="12dp" />
+         
+         <TextView
+             android:id="@+id/uniPago"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:gravity="center"
+             android:textColor="#5479B6"
+             android:textIsSelectable="false"
+             android:textSize="12dp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="Última quincena de cobro"
+             android:textColor="#849ECE"
+             android:textIsSelectable="false"
+             android:textSize="12dp" />
+         
+        <TextView
+            android:id="@+id/quincena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <View android:layout_height="fill_parent"
+        android:layout_width="4dp" 
+        android:background="#4972B1" />
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/btn_next_unpressed" />
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

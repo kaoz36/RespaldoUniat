@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_skin"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        style="@style/titleBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Ubicación" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#999999" />
+
+    <FrameLayout
+        android:layout_width="455dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/commoneditskin"
+        android:minWidth="200dp" >
+
+        <EditText
+            android:id="@+id/nombreText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/skinlesstext"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textSize="22sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/deletebutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_cancel"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/shadowskin" >
+        </View>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="455dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/commoneditskin"
+        android:minWidth="200dp" >
+
+        <EditText
+            android:id="@+id/retenedorText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/skinlesstext"
+            android:hint="Retenedor"
+            android:inputType="number"
+            android:textSize="22sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/deletebutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_cancel"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/shadowskin" >
+        </View>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/commoneditskin"
+            android:minWidth="200dp" >
+
+            <EditText
+                android:id="@+id/uPagoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/skinlesstext"
+                android:hint="Unidad de Pago"
+                android:inputType="number"
+                android:textSize="22sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/deletebutton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/btn_cancel"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shadowskin" >
+            </View>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/commoneditskin"
+            android:minWidth="200dp" >
+
+            <EditText
+                android:id="@+id/prospectosText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/skinlesstext"
+                android:hint="Prospectos"
+                android:inputType="number"
+                android:textSize="22sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/deletebutton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/btn_cancel"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shadowskin" >
+            </View>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="@drawable/commoneditskin"
+            android:minWidth="200dp" >
+
+            <EditText
+                android:id="@+id/direccionText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/skinlesstext"
+                android:hint="Dirección"
+                android:inputType="text"
+                android:textSize="22sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/deletebutton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/btn_cancel"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shadowskin" >
+            </View>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/commoneditskin"
+            android:minWidth="200dp" >
+
+            <EditText
+                android:id="@+id/claveText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/skinlesstext"
+                android:hint="Clave de la Zona"
+                android:inputType="text"
+                android:textSize="22sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/deletebutton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/btn_cancel"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shadowskin" >
+            </View>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/searchbuttonscreen"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Guardar"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/searchbuttonscreen"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Cancelar"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+package com.jaguarlabs.sipac.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+public class SipacOpenHelper extends SQLiteOpenHelper {
+
+	
+	public static final String TABLE_POLIZA = "poliza";
+	public static final String TABLE_COBERTURA = "cobertura";
+	public static final String TABLE_SERV_VENTA = "servicio_venta";
+	public static final String TABLE_SERV_AFECT = "servicio_afect";
+	public static final String TABLE_SERV_GRAL = "servicio_general";
+	
+	public static final String TABLE_EDADES = "cotizador_edad";
+	public static final String TABLE_PROFESIONES = "cotizador_profesion";
+	public static final String TABLE_PROSPECCIONES = "prospecciones";
+	
+	public static final String DBNAME = "sipac.db";
+	public static final int DBVERSION = 8;
+	
+	public static final String CREATE_PROSPECCIONES = "CREATE TABLE IF NOT EXISTS "+TABLE_PROSPECCIONES+ "(" +
+			"  poliza varchar(8) NOT NULL," +
+			"  plan varchar(6) NOT NULL," +
+			"  nombre varchar(100) NOT NULL," +
+			"  edad int(11) NOT NULL," +
+			"  prima double NOT NULL," +
+			"  bas double NOT NULL," +
+			"  cma tinyint(1) NOT NULL," +
+			"  tiba tinyint(1) NOT NULL," +
+			"  cii tinyint(1) NOT NULL," +
+			"  bac tinyint(1) NOT NULL," +
+			"  cat tinyint(1) NOT NULL," +
+			"  bacy tinyint(1) NOT NULL," +
+			"  gfa tinyint(1) NOT NULL," +
+			"  bit tinyint(1) NOT NULL," +
+			"  exc double NOT NULL," +
+			"  gfc tinyint(1) NOT NULL," +
+			"  gfh tinyint(1) NOT NULL," +
+			"  ge tinyint(1) NOT NULL," +
+			"  catp tinyint(1) NOT NULL," +
+			"  zona varchar(6) NOT NULL," +
+			"  f_emi date NOT NULL," +
+			"  f_u_vta date NOT NULL," +
+			"  f_2216 date NOT NULL," +
+			"  res_disp double NOT NULL," +
+			"  inversion double NOT NULL," +
+			"  municipio varchar(50) NOT NULL," +
+			"  fuma tinyint(1) NOT NULL," +
+			"  sexo tinyint(1) NOT NULL," +
+			"  estado_civil int(11) NOT NULL," +
+			"  PRIMARY KEY  (poliza)" +
+			")";	
+	
+	public static final String CREATE_PROFESIONES = "CREATE TABLE IF NOT EXISTS "+ TABLE_PROFESIONES+" (" +
+			" id_profesion INTEGER not null primary key autoincrement," +
+			" nombre  varchar(50) NOT NULL," +
+			" millar float NOT NULL," +
+			" accidente float NOT NULL," +
+			" invalidez  float NOT NULL" +
+			" )";
+	
+	public static final String CREATE_EDADES="CREATE TABLE IF NOT EXISTS "+TABLE_EDADES+"(" +
+			" edad int(11) NOT NULL," +
+			" BAS float NOT NULL," +
+			" CII float NOT NULL," +
+			" CMA float NOT NULL," +
+			" TIBA float NOT NULL," +
+			" BCAT float NOT NULL," +
+			" GFA float NOT NULL," +
+			" GE float NOT NULL," +
+			" BIT float NOT NULL,"+
+			" BASN float NOT NULL,"+
+			" CMAN float NOT NULL,"+
+			" TIBAN float NOT NULL,"+
+			" CPCONY float NOT NULL,"+
+			" PRIMARY KEY  (edad))";
+	
+	public static final String CREATE_POLIZA= "CREATE TABLE "+TABLE_POLIZA+" (" +
+			"id INTEGER not null primary key autoincrement," +
+			"status VARCHAR(45) NOT NULL," +
+			"retenedor VARCHAR(10) NOT NULL," +
+			"nombre VARCHAR(60) NOT NULL," +
+			"rfc VARCHAR(13) NOT NULL," +
+			"empleado VARCHAR(10) NOT NULL," +
+			"sexo VARCHAR(1) NOT NULL," +
+			"fuma VARCHAR(2) NOT NULL," +
+			"nac VARCHAR(45) NOT NULL," +
+			"calle VARCHAR(45) NOT NULL," +
+			"ext INTEGER UNSIGNED NOT NULL," +
+			"int INTEGER UNSIGNED NOT NULL," +
+			"cp VARCHAR(5) NOT NULL," +
+			"tel VARCHAR(12) NOT NULL," +
+			"pob VARCHAR(10) NOT NULL," +
+			"col VARCHAR(10) NOT NULL," +
+			"email VARCHAR(45) NOT NULL," +
+			"prima_pag INTEGER UNSIGNED NOT NULL," +
+			"res INTEGER UNSIGNED NOT NULL," +
+			"inv INTEGER UNSIGNED NOT NULL," +
+			"prima_pen INTEGER UNSIGNED NOT NULL," +
+			"rec_pen VARCHAR(15) NOT NULL," +
+			"ult_pag INTEGER UNSIGNED NOT NULL," +
+			"prima_emi INTEGER UNSIGNED NOT NULL," +
+			"prima_quin INTEGER UNSIGNED NOT NULL," +
+			"fec_ini_vig VARCHAR(45) NOT NULL," +
+			"fec_ult_mod VARCHAR(45) NOT NULL," +
+			"fec_ult_ret VARCHAR(45) NOT NULL," +
+			"orden_pago INTEGER UNSIGNED NOT NULL," +
+			"monto INTEGER UNSIGNED NOT NULL," +
+			"cheque VARCHAR(3) NOT NULL," +
+			"referencia VARCHAR(20) NOT NULL," +
+			"prima INTEGER UNSIGNED NOT NULL," +
+			"prima_esp INTEGER UNSIGNED NOT NULL," +
+			"prima_desc INTEGER UNSIGNED NOT NULL," +
+			"cpto VARCHAR(45) NOT NULL," +
+			"sub_ret VARCHAR(45) NOT NULL," +
+			"cve_cob VARCHAR(10) NOT NULL," +
+			"uni_pago VARCHAR(10) NOT NULL," +
+			"quin VARCHAR(45) NOT NULL," +
+			"tipo_mov VARCHAR(10) NOT NULL" +
+			")";
+	
+	public static final String CREATE_COBERTURA= "CREATE TABLE "+TABLE_COBERTURA+" (" +
+			"  id INTEGER not null primary key autoincrement," +
+			"  id_poliza INTEGER UNSIGNED NOT NULL," +
+			"  prima INTEGER UNSIGNED NOT NULL," +
+			"  prima_ext INTEGER UNSIGNED NOT NULL," +
+			"  suma INTEGER UNSIGNED NOT NULL" +
+			")";	
+	
+	
+	public static final String CREATE_SERV_VENTA = "CREATE TABLE "+TABLE_SERV_VENTA+" " +
+			"(id INTEGER not null primary key autoincrement," +
+			"  id_poliza INTEGER UNSIGNED NOT NULL," +
+			"  id_agente INTEGER UNSIGNED NOT NULL," +
+			"  fec_env VARCHAR(45) NOT NULL," +
+			"  fec_emi VARCHAR(45) NOT NULL," +
+			"  fec_ent VARCHAR(45) NOT NULL," +
+			"  fec_acc VARCHAR(45) NOT NULL," +
+			"  prima_ini INTEGER UNSIGNED NOT NULL," +
+			"  prima_tot INTEGER UNSIGNED NOT NULL"+
+			")";	
+	
+	public static String CREATE_SERV_AFECT = "CREATE TABLE "+TABLE_SERV_AFECT+" (" +
+			"  id INTEGER not null primary key autoincrement," +
+			"  id_poliza INTEGER UNSIGNED NOT NULL," +
+			"  mas_men INTEGER UNSIGNED NOT NULL," +
+			"  prima VARCHAR(45) NOT NULL," +
+			"  fec_emi VARCHAR(45) NOT NULL," +
+			"  plan VARCHAR(45) NOT NULL" +
+			")";
+	
+	public static String CREATE_SERV_GRAL = "CREATE TABLE "+TABLE_SERV_GRAL+" (" +
+			"  id INTEGER not null primary key autoincrement," +
+			"  id_poliza INTEGER UNSIGNED NOT NULL," +
+			"  agente VARCHAR(45) NOT NULL," +
+			"  descripcion VARCHAR(45) NOT NULL," +
+			"  fecha VARCHAR(45) NOT NULL"  +
+			")";
+	
+	
+	public SipacOpenHelper(Context context){
+		super(context,DBNAME,null,DBVERSION);		
+	}
+	
+	 	
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		Log.i("DBHelper","sql stmt: "+CREATE_POLIZA);
+		db.execSQL(CREATE_POLIZA);
+		db.execSQL(CREATE_COBERTURA);
+		db.execSQL(CREATE_SERV_GRAL);
+		db.execSQL(CREATE_SERV_VENTA);
+		db.execSQL(CREATE_SERV_AFECT);
+		db.execSQL(CREATE_EDADES);
+		db.execSQL(CREATE_PROFESIONES);
+		db.execSQL(CREATE_PROSPECCIONES);
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		// TODO Auto-generated method stub
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_POLIZA);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_COBERTURA);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERV_GRAL);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERV_VENTA);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERV_AFECT);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_EDADES);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_PROFESIONES);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_PROSPECCIONES);
+		 onCreate(db);
+	}
+	
+	
+
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MenuActivity" 
+    android:orientation="vertical"
+    android:background="@drawable/screenbackground" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarskin"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:background="@drawable/backbuttonskin" 
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView android:text="Opciones" style="@style/titleText"/>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+        
+	    
+		 <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:contentDescription="Logo Nuvem"
+			    android:src="@drawable/img_logo"   
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginRight="11dp"
+			    android:layout_marginTop="11dp">
+		</ImageView>
+	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:orientation="vertical" >
+		    
+		    <Button 
+		        style="@style/menuButton"
+		        android:id="@+id/perfilButton"
+		        android:background="@drawable/perfilbuttonskin"
+		        android:layout_marginBottom="17dp"
+		        android:text="Perfil del Agente" 
+		        android:onClick="navigateClick"  />
+		    
+		    <Button style="@style/menuButton"
+		        android:id="@+id/consultaButton"
+		        android:background="@drawable/consultabuttonskin"
+		        android:layout_marginBottom="17dp"
+		        android:text="Consulta de Cartera"
+		        android:onClick="navigateClick" />
+		    
+		    <Button style="@style/menuButton"
+		        android:id="@+id/cotizaButton"
+		        android:background="@drawable/cotizabuttonskin"
+		        android:layout_marginBottom="17dp"
+		        android:text="Cotizador"
+		        android:onClick="navigateClick" />
+		    
+		    <Button style="@style/menuButton"
+		        android:background="@drawable/prospeccionbuttonskin"
+		        android:id="@+id/prospectButton"
+		        android:layout_marginBottom="17dp"
+		        android:text="Prospección"
+		        android:onClick="navigateClick" />
+		    
+		    <Button style="@style/menuButton"
+		        android:id="@+id/geolocalizacionButton"
+		        android:background="@drawable/geolocalizacionbuttonskin"
+		        android:layout_marginBottom="17dp"
+		        android:text="Geolocalización"
+		        android:onClick="navigateClick" />
+		    <Button style="@style/menuButton"
+		        android:id="@+id/actualizaButton"
+		        android:background="@drawable/actualizabuttonskin"
+		        android:layout_marginBottom="17dp"
+		        android:text="Actualización de Datos"
+		        android:onClick="backupData" />	    
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

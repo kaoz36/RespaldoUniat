@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EAC2"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Servicio con Afectación en Primas"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:textColor="#000000"
+           android:textSize="20dp"
+           android:textStyle="bold" />
+
+       <View
+           android:layout_width="fill_parent"
+           android:layout_height="2dip"
+           android:background="#FF000000" />
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingTop="6dp" >
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="#4972B1" >
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Servicio"
+                   android:textColor="#FFFFFF"
+                   android:textIsSelectable="false"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+
+               <FrameLayout
+                   android:layout_width="3dp"
+                   android:layout_height="match_parent"
+                   android:background="#D4D0C8" >
+               </FrameLayout>
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="+ / -"
+                   android:textColor="#FFFFFF"
+                   android:textIsSelectable="false"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+
+               <FrameLayout
+                   android:layout_width="3dp"
+                   android:layout_height="match_parent"
+                   android:background="#D4D0C8" >
+               </FrameLayout>
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Prima"
+                   android:textColor="#FFFFFF"
+                   android:textIsSelectable="false"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+
+               <FrameLayout
+                   android:layout_width="3dp"
+                   android:layout_height="match_parent"
+                   android:background="#D4D0C8" >
+               </FrameLayout>
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".8"
+                   android:gravity="center_horizontal"
+                   android:text="Fecha Emi."
+                   android:textColor="#FFFFFF"
+                   android:textIsSelectable="false"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+
+               <FrameLayout
+                   android:layout_width="3dp"
+                   android:layout_height="match_parent"
+                   android:background="#D4D0C8" >
+               </FrameLayout>
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Plan"
+                   android:textColor="#FFFFFF"
+                   android:textIsSelectable="false"
+                   android:textSize="12sp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+
+           <ScrollView
+            	android:layout_width="fill_parent"
+              	android:layout_height="wrap_content" >
+               
+            	<LinearLayout
+	                android:id="@+id/servicioAfecList"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+            	</LinearLayout>
+    		</ScrollView>
+	</LinearLayout>
+
+
+</LinearLayout>

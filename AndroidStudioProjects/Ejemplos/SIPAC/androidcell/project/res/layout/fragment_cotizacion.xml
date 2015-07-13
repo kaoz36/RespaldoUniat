@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/screenbackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_navbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="7dp"
+            android:src="@drawable/menubuttonskin" />
+
+        <TextView
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Cotizador"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/focuStarter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/primaExcedenteText"
+            style="@style/blueinfotext"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Prima Excedente Anual: " />
+
+        <TextView
+            android:id="@+id/primaTotalText"
+            style="@style/blueinfotext"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Prima Total Anual" />
+
+        <TextView
+            android:id="@+id/textMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="+"
+            android:textColor="#3F84BE"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/focuStarter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:paddingTop="5dp" >
+
+        <EditText
+            android:id="@+id/primaExcedenteInput"
+            style="@style/cotizadorformenable"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/primaTotalInput"
+            style="@style/cotizadorforminput"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#7F7F7F" />
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:paddingBottom="5dp" -->
+    <!-- android:paddingLeft="8dp" -->
+    <!-- android:paddingRight="18dp" > -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/clearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clearbuttonscreen"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Limpiar Captura"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:id="@+id/showCotizacionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/searchbuttonscreen"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Ver Cotización"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <Button
+                android:id="@+id/titularButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabskin_press"
+                android:onClick="onClickTab"
+                android:text="General"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/coberturasButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabskin"
+                android:onClick="onClickTab"
+                android:text="Cobertura Titular"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/conyugueButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabskin"
+                android:onClick="onClickTab"
+                android:text="Cobertura Cónyuge"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/hijosButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabskin"
+                android:onClick="onClickTab"
+                android:text="Coberturas Adicionales"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/pager_title_strip_flip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEE4BA"
+            android:padding="10dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff" >
+
+        </ViewFlipper>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

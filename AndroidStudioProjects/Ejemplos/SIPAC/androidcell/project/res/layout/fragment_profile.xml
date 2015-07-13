@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_navbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/titleText"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="Perfil de Usuario"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="7dp"
+                android:src="@drawable/menubuttonskin" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        style="@style/captionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I.D."
+                        android:textSize="18sp" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/commoneditskin"
+                        android:minWidth="200dp" >
+
+                        <TextView
+                            android:id="@+id/TextId"
+                            style="@style/informationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="7dp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="8dp"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/shadowskin" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView03"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button1"
+                android:layout_marginTop="10dp"
+                android:text="Fecha de Expiración"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_fechaexpiracion"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView03"
+                android:layout_below="@+id/TextView03"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/TextDateExpiration"
+                    style="@style/informationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView04"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_fechaexpiracion"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_name"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frame_fechaexpiracion"
+                android:layout_below="@+id/TextView04"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/TextName"
+                    style="@style/informationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView07"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_email"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/TextEmail"
+                    style="@style/informationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/TextView05"
+                style="@style/captionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frame_name"
+                android:layout_below="@+id/frame_name"
+                android:layout_marginTop="10dp"
+                android:text="R.F.C"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_RFC"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frame_name"
+                android:layout_below="@+id/TextView05"
+                android:background="@drawable/commoneditskin"
+                android:minWidth="200dp" >
+
+                <TextView
+                    android:id="@+id/TextRFC"
+                    style="@style/informationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shadowskin" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jaguarlabs.sipac.util.FractionFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/screenbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbarskin"
+        android:gravity="center_vertical">
+        <Button android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:background="@drawable/menubuttonskin"
+             android:id="@+id/back" />
+
+        <TextView
+            style="@style/titleText"
+            android:text="Cotizador" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content"
+	            android:id="@+id/focuStarter"
+				android:descendantFocusability="beforeDescendants"
+				android:focusableInTouchMode="true"
+				android:paddingLeft="20dp" android:paddingRight="20dp" 
+                   android:paddingTop="10dp"
+	            android:orientation="horizontal" >
+       	    <TextView 
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:layout_marginRight="5dp"
+            	style="@style/blueinfotext"
+            	android:text="Asegurado Titular:" />
+       	    
+       	    <EditText 
+       	        android:imeOptions="actionDone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/aseguradoInput"
+           	  	style="@style/blackforminput"/>  
+           	  	
+       	    <Button
+       	        android:id="@+id/showCotizacion"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:layout_gravity="center"
+       	        android:layout_marginRight="10dp"
+       	        android:background="@drawable/searchbuttonscreen"
+       	        android:paddingBottom="10dp"
+       	        android:paddingLeft="11dp"
+       	        android:paddingRight="11dp"
+       	        android:paddingTop="10dp"
+       	        android:text="Ver Cotización"
+       	        android:textColor="#FFFFFF"
+       	        android:textSize="18sp" />
+       	    
+       	    <Button
+       	        android:id="@+id/clearButton"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="center"
+    	        android:background="@drawable/graybuttonskin"
+    	        android:paddingBottom="10dp"
+    	        android:paddingLeft="11dp"
+    	        android:paddingRight="11dp"
+    	        android:paddingTop="10dp"
+    	        android:text="Limpiar Captura"
+    	        android:textColor="#FFFFFF"
+    	        android:textSize="18sp" />
+       	    
+       	    
+       	</LinearLayout>   
+       	 <LinearLayout android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content"
+				android:paddingLeft="20dp" android:paddingRight="20dp" 
+                android:paddingTop="10dp"
+	            android:orientation="horizontal" android:layout_marginBottom="10dp">
+       	    
+     	        <TextView
+     	        android:layout_width="wrap_content"
+          		style="@style/blueinfotext"
+          		android:layout_marginRight="5dp"
+          		android:text="Excedente de Prima: " />
+       	    
+	       	    <EditText 
+	       	        android:imeOptions="actionDone"
+                	android:layout_width="0dp"
+     	        	android:layout_weight="1"
+                	android:inputType="number"
+                	android:textSize="20sp"
+                	android:layout_marginRight="7dp"
+                	android:id="@+id/primaExcedenteInput"
+          	  		style="@style/blackforminput"  />  
+           	  
+       	    	<TextView
+       	        android:layout_width="wrap_content"
+       	        android:id="@+id/primaHeaderText"
+       	        android:layout_marginRight="5dp"
+            	style="@style/blueinfotext"
+            	android:text="Prima Total Anual: " />
+       	    	
+       	    	<EditText 
+       	        android:imeOptions="actionDone"
+             	android:layout_width="0dp"
+     	        android:layout_weight="1"
+             	android:inputType="number"
+             	android:id="@+id/primaTotalInput"
+        	  	style="@style/cotizadorforminput"  
+        	  	android:enabled="false"/>  
+        	  	
+       	 </LinearLayout>	
+    <View  android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_width="fill_parent" android:layout_height="2dp" android:background="#7F7F7F" android:layout_marginBottom="10dp"/>
+    <ScrollView  android:layout_width="fill_parent"
+    			 android:layout_height="fill_parent" >
+        
+				    <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="match_parent"
+				        android:orientation="vertical"
+				        android:paddingBottom="10dp"
+				        android:paddingLeft="20dp"
+				        android:paddingRight="20dp"
+				        android:paddingTop="10dp" >
+				        	
+				        	<LinearLayout android:layout_width="fill_parent" 
+						            android:layout_height="wrap_content"
+						            android:orientation="horizontal" android:layout_marginBottom="5dp">
+						            
+						            <LinearLayout android:orientation="vertical" 
+						                android:layout_width="0dp" 
+									    android:layout_weight="2" 
+									    android:layout_height="wrap_content">
+									    <LinearLayout 
+											        android:orientation="horizontal"
+											        android:layout_width="match_parent"
+													android:layout_height="wrap_content" android:layout_marginBottom="5dp" >
+									        <TextView 
+						                     	android:layout_width="0dp"
+						                     	android:layout_weight="1"
+								            	style="@style/blueinfotext"
+								            	android:text="Sexo:"/>
+									        
+									        <TextView 
+						                     	android:layout_width="0dp"
+						                     	android:layout_weight="1"
+								            	style="@style/blueinfotext"
+								            	android:text="Hábito:"/>
+									    </LinearLayout>
+						               <LinearLayout 
+											        android:orientation="horizontal"
+											        android:layout_width="match_parent"
+													android:layout_height="wrap_content" android:layout_marginBottom="5dp" >
+						                   
+						                   <RadioGroup 
+								                  android:id="@+id/radioSex"
+								            	  android:layout_width="0dp"
+									              android:layout_weight="1" 
+								            	  android:layout_height="wrap_content"
+								            	  android:orientation="horizontal">
+								            	  
+									                 <RadioButton
+									                  android:id="@+id/radioMale"
+									                  style="@style/blackinfotext"
+									                  android:layout_width="0dp"
+									                  android:layout_weight="1" 
+								            	  	  android:layout_height="wrap_content"
+									                  android:text="M" 
+									                  android:checked="true" />
+									                 
+									                 <RadioButton
+									                  android:id="@+id/radioFemale"
+									                  style="@style/blackinfotext" 
+									                  android:layout_width="0dp"
+									                  android:layout_weight="1"  
+									            	  android:layout_height="wrap_content"
+									                  android:text="F" />
+								           </RadioGroup>
+								           <CheckBox 
+									        	android:id="@+id/fumaCheck"
+						                    	android:layout_width="0dp"
+						                    	android:layout_weight="1"
+								            	style="@style/blackinfotext"
+								            	android:text="Fuma" />      
+						                   
+								                 
+						               </LinearLayout>
+									    
+						                 
+										<LinearLayout 
+											        android:orientation="horizontal"
+											        android:layout_width="match_parent"
+													android:layout_height="wrap_content" android:layout_marginBottom="5dp" >
+										    <TextView 
+						                     	android:layout_width="0dp"
+						                     	android:layout_weight="1"
+								            	style="@style/blueinfotext"
+								            	android:text="Edad Real:"/>
+										    
+										    <TextView 
+						                     	android:layout_width="0dp"
+						                     	android:layout_weight="1"
+								            	style="@style/blueinfotext"
+								            	android:text="Edad de Cálculo:"/>
+										</LinearLayout>
+										<LinearLayout 
+											        android:orientation="horizontal"
+											        android:layout_width="fill_parent"
+													android:layout_height="wrap_content" android:layout_marginBottom="15dp" >
+										    <EditText 
+						                    	  android:layout_width="0dp"
+						                    	  android:layout_weight="1" 
+						                    	  android:inputType="number"
+						                    	  android:id="@+id/realAge"
+						                    	  android:maxLength="2"
+						                    	  android:imeOptions="actionDone"
+								            	  style="@style/blackforminput" />  
+								            	  
+							            	 <View android:layout_width="0dp"
+					                    	  android:layout_weight="1"  android:layout_height="2dp"/>   
+										    
+										    <EditText 
+										          android:imeOptions="actionDone"
+						                    	  android:layout_width="0dp"
+						                    	  android:layout_weight="1" 
+						                    	  android:inputType="number"
+						                    	  android:id="@+id/calculateAge"
+								            	  style="@style/blackforminput"  android:enabled="false"/>  
+								            
+										    <View android:layout_width="0dp"
+					                    	  android:layout_weight="1"  android:layout_height="2dp"/>  
+								               
+										</LinearLayout>
+										
+										
+									</LinearLayout>
+									<LinearLayout 
+					                android:layout_width="0dp" 
+								    android:layout_weight="1"
+									android:layout_height="wrap_content"
+									android:gravity="center"
+									android:layout_gravity="center_vertical">
+						            	<ImageView
+											    android:layout_width="wrap_content" 
+											    android:layout_height="wrap_content"
+											    android:contentDescription="Logo Nuvem"
+											    android:src="@drawable/img_logo">
+										</ImageView>    
+								 </LinearLayout>
+						            
+						    </LinearLayout>
+						    <LinearLayout 
+								        android:orientation="horizontal"
+								        android:layout_width="match_parent"
+										android:layout_height="wrap_content" android:layout_marginBottom="5dp" >
+							    <TextView 
+				                     	android:layout_width="0dp"
+				                     	android:layout_weight="1"
+						            	style="@style/blueinfotext"
+						            	android:text="Extra Primas:"/>
+							    
+							    <TextView 
+				                    	android:layout_width="0dp"
+				                    	android:layout_weight="1"
+					            	style="@style/blueinfotext"
+					            	android:text="Ocupación:"/>
+							</LinearLayout>
+							<LinearLayout 
+								        android:orientation="horizontal"
+								        android:layout_width="match_parent"
+										android:layout_height="wrap_content" android:layout_marginBottom="5dp" >
+							    
+							   <TextView
+					                        android:id="@+id/extraPrimas"
+					                        android:layout_width="0dp"
+					                        android:layout_height="wrap_content"
+					                        android:layout_marginRight="10dp"
+					                        android:layout_weight="1"
+					                        android:background="@drawable/textboxskin"
+					                        android:enabled="false"
+					                        android:textColor="#DD2222"
+					                        android:textSize="12sp"  android:layout_marginBottom="20dp"/>
+							    
+							    <Spinner android:id="@+id/profesionesSpinner"
+								         android:layout_width="0dp"
+					                   	  android:layout_weight="1" 
+					                   	  android:layout_marginTop="10dp"
+						            	  android:layout_height="wrap_content" />
+							    
+							   
+							</LinearLayout>
+							 <LinearLayout
+							        android:id="@+id/mainCotizadorHolder"
+							        android:layout_width="fill_parent"
+							        android:layout_height="fill_parent"
+							        android:layout_gravity="center_horizontal"
+							        android:orientation="horizontal" 
+							        android:baselineAligned="false">
+						         <ViewFlipper
+							            android:layout_width="fill_parent"
+							            android:layout_height="wrap_content"
+							            android:layout_weight="1"
+							            android:padding="15dp"
+							         
+							            android:id="@+id/cotizadorFlipper"
+							            android:background="@drawable/pageskin">
+<!-- 						            	 <include layout="@layout/page_general_cotizador" /> -->
+<!-- 						            	 <include layout="@layout/page_cobertura_cotizador" /> -->
+<!-- 						            	 <include layout="@layout/page_conyugue_cotizador" /> -->
+<!-- 						            	 <include layout="@layout/page_hijos_cotizador" /> -->
+						         </ViewFlipper>
+						         <LinearLayout
+							        android:layout_width="fill_parent"
+							        android:layout_height="fill_parent"
+							        android:layout_weight="12"
+							        android:gravity="center_vertical"
+							        android:orientation="vertical" >
+							        	
+								       <com.jaguarlabs.sipac.components.VerticalButton
+								            android:id="@+id/titularButton"
+								            style="@style/tabButton"
+								            android:layout_width="fill_parent"
+								            android:layout_height="fill_parent"
+								            android:layout_gravity="center"
+								            android:layout_weight="1"
+								            android:onClick="cotizadorTabClick"
+								            android:text="General" />
+							
+								        <com.jaguarlabs.sipac.components.VerticalButton
+								            android:id="@+id/coberturaButton"
+								            style="@style/tabButton"
+								            android:layout_width="fill_parent"
+								            android:layout_height="fill_parent"
+								            android:layout_gravity="center"
+								            android:layout_weight="1"
+								            android:onClick="cotizadorTabClick"
+								            android:text="Cobertura Titular" />
+								        
+								        <com.jaguarlabs.sipac.components.VerticalButton
+								            android:id="@+id/conyugueButton"
+								            style="@style/tabButton"
+								            android:layout_width="fill_parent"
+								            android:layout_height="fill_parent"
+								            android:layout_gravity="center"
+								            android:layout_weight="1"
+								            android:onClick="cotizadorTabClick"
+								            android:text="Cobertura Cónyuge" />
+								        
+								        <com.jaguarlabs.sipac.components.VerticalButton
+								            android:id="@+id/hijosButton"
+								            style="@style/tabButton"
+								            android:layout_width="fill_parent"
+								            android:layout_height="fill_parent"
+								            android:layout_gravity="center"
+								            android:layout_weight="1"
+								            android:onClick="cotizadorTabClick"
+								            android:gravity="bottom|center"
+								            android:text="Cob. Adicionales" />
+							
+								</LinearLayout> 
+						     </LinearLayout>
+				     </LinearLayout>
+        
+    </ScrollView>
+
+</com.jaguarlabs.sipac.util.FractionFrameLayout>

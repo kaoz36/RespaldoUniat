@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    android:orientation="vertical"
+    tools:context=".MenuActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_navbar"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:padding="6dp"
+            android:src="@drawable/salirbuttonskin" />
+
+        <TextView
+            style="@style/titleText"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="left|center_vertical"
+            android:text="Menú"
+            android:textSize="22dp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+        
+		 <ImageView
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentRight="true"
+		     android:layout_alignParentTop="true"
+		     android:layout_gravity="center_vertical"
+		     android:layout_marginRight="11dp"
+		     android:layout_marginTop="11dp"
+		     android:contentDescription="Logo Nuvem"
+		     android:src="@drawable/logo" >
+
+		</ImageView>
+	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="90dp"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:orientation="vertical" >
+		    
+		    <ImageButton
+		        android:id="@+id/perfilButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="navigateClick"
+		        android:src="@drawable/perfilbuttonskin" />
+		    
+		    <ImageButton
+		        android:id="@+id/consultaButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="navigateClick"
+		        android:src="@drawable/consultabuttonskin"
+		        android:textSize="20sp"
+		        android:textStyle="bold" />
+		    
+		    <ImageButton
+		        android:id="@+id/cotizaButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="navigateClick"
+		        android:src="@drawable/cotizabuttonskin" />
+		    
+		    <ImageButton
+		        android:id="@+id/prospectButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="navigateClick"
+		        android:src="@drawable/prospeccionbuttonskin" />
+		    
+		    <ImageButton
+		        android:id="@+id/geolocalizacionButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="navigateClick"
+		        android:src="@drawable/geolocalizacionbuttonskin" />
+
+		    <ImageButton
+		        android:id="@+id/actualizaButton"
+		        style="@style/menuButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:background="@null"
+		        android:onClick="backupData"
+		        android:src="@drawable/actualizabuttonskin" />
+	    
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

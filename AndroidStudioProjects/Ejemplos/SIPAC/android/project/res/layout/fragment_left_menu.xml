@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jaguarlabs.sipac.util.FractionFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_menu_slide_skin" >
+
+    <ImageButton
+        android:id="@+id/btn_perfil_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/perfil_btn_slide_skin"
+        android:onClick="onMenuButtonClick"
+        android:src="@null" />
+
+    <ImageButton
+        android:id="@+id/btn_consulta_cartera_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cartera_btn_slide_skin"
+        android:onClick="onMenuButtonClick" />
+
+    <ImageButton
+        android:id="@+id/btn_cotizacion_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cotizacion_btn_slide_skin"
+        android:onClick="onMenuButtonClick" />
+
+    <ImageButton
+        android:id="@+id/btn_prospeccion_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prospeccion_btn_slide_skin"
+        android:onClick="onMenuButtonClick" />
+
+    <ImageButton
+        android:id="@+id/btn_geolocalizacion_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/localizacion_btn_slide_skin"
+        android:onClick="onMenuButtonClick" />
+
+    <ImageButton
+        android:id="@+id/btn_actualiza_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acualizacion_btn_slide_skin"
+        android:onClick="backupData" />
+    
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logout_btn_slide_skin"
+        android:onClick="onMenuButtonClick" />
+
+        
+ </com.jaguarlabs.sipac.util.FractionFrameLayout>

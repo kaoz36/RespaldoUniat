@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="naranja">#FF8200</color>
+    <color name="gris_medio">#CECECE</color>
+    <color name="gris_claro">#E1E8E4</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="text_menu_drawer">#707372</color>
+    <color name="gris_fuerte">#707372</color>
+    <color name="list_divider">#FFFFFF</color>
+</resources>

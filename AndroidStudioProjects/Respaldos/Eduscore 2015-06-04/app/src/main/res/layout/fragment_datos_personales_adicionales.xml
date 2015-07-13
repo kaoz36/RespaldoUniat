@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_datos_personales"
+            android:id="@+id/textView1"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:padding="7dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pais_residencia"
+                android:id="@+id/textView2"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerPaisResidencia"
+                android:prompt="@string/text_hint_pais_residencia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_estado_residencia"
+                android:id="@+id/textView3"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEstadoResidencia"
+                android:prompt="@string/text_hint_estado_residencia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ciudad_residencia"
+                android:id="@+id/textView4"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCiudadResidencia"
+                android:prompt="@string/text_hint_ciudad_residencia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_calle"
+                android:id="@+id/textView5"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCalle"
+                    android:hint="@string/text_hint_calle"
+                    style="@style/style_edittext"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton1"
+                    android:src="@drawable/selector_btn_clear"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_numero_ext"
+                android:id="@+id/textView6"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNumExt"
+                    android:hint="@string/text_hint_numero_ext"
+                    style="@style/style_edittext"
+                    android:inputType="number"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton2"
+                    android:src="@drawable/selector_btn_clear"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_numero_int"
+                android:id="@+id/textView7"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNumInt"
+                    android:hint="@string/text_hint_numero_int"
+                    style="@style/style_edittext"
+                    android:inputType="number"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton3"
+                    android:src="@drawable/selector_btn_clear"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_colonia"
+                android:id="@+id/textView8"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextColonia"
+                    android:hint="@string/text_hint_colonia"
+                    style="@style/style_edittext"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton4"
+                    android:visibility="invisible"
+                    android:src="@drawable/selector_btn_clear"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_codigo_postal"
+                android:id="@+id/textView9"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCP"
+                    android:hint="@string/text_hint_codigo_postal"
+                    style="@style/style_edittext"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton5"
+                    android:src="@drawable/selector_btn_clear"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_clave_curp"
+                android:id="@+id/textView10"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCurp"
+                    android:hint="@string/text_hint_clave_curp"
+                    style="@style/style_edittext"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/clearButton6"
+                    android:src="@drawable/selector_btn_clear"
+                    android:visibility="invisible"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pais_origen"
+                android:id="@+id/textView11"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerPaisOrigen"
+                android:prompt="@string/text_hint_pais_origen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_estado_origen"
+                android:id="@+id/textView12"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEstadoOrigen"
+                android:prompt="@string/text_hint_estado_origen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_ciudad_origen"
+                android:id="@+id/textView13"
+                style="@style/style_textview" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCiudadOrigen"
+                android:prompt="@string/text_hint_ciudad_origen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_fecha_nacimiento"
+                android:id="@+id/textView14"
+                style="@style/style_textview" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/style_edittext_back">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TextNacimiento"
+                    android:hint="@string/text_hint_fecha_nacimiento"
+                    style="@style/style_edittext"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screenbackground" >
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/img_navbar" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:padding="5dp"
+             android:text="Geolocalización"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#ffffff"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <Spinner
+             android:id="@+id/spinner1"
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:layout_centerHorizontal="true"
+             android:background="@null" />
+
+         <ImageButton
+             android:id="@+id/backActivity"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:padding="8dp"
+             android:src="@drawable/backbuttonskin" />
+
+         <ImageButton
+             android:id="@+id/listPromo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:background="@null"
+             android:src="@drawable/promotorias_list" />
+
+	    </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#FFFFFFFF" >
+		 
+        <FrameLayout  android:id="@+id/mapHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+         
+         <ImageView
+            android:id="@+id/map_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+         <ImageView
+             android:id="@+id/imageHelp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/img_localizatuto" />
+
+     </RelativeLayout>
+
+</LinearLayout>

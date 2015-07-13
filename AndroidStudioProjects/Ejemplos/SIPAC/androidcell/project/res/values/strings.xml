@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <string name="app_name"  translatable="false">SIPAC_CEL</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="search_text" translatable="false">Buscar</string>
+    <string name="login_text"  translatable="false">Ingresar</string>
+    <string name="search_hint"  translatable="false">Nombre | Póliza | RFC | No. Empleado</string>
+    <string name="user_hint" translatable="false">Usuario</string>
+    <string name="password_hint" translatable="false">Contraseña</string>
+    <string name="row_header_id" translatable="false">Poliza</string>
+    <string name="row_header_nombre" translatable="false">Nombre</string>
+    <string name="row_header_rfc" translatable="false">RFC</string>
+    <string name="row_header_unidad" translatable="false">Unidad de Pago</string>
+    <string name="row_header_prima" translatable="false">Prima</string>
+    <string name="row_header_quincena" translatable="false"><![CDATA[Última quincena de pago]]></string>
+</resources>

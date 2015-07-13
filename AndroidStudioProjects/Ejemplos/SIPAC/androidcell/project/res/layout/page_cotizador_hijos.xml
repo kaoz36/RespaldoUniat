@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:background="#FFEFEEED"
+            style="@style/cotizadorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp" >
+
+                    <Spinner
+                        android:id="@+id/gfhSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Suma Asegurada"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/TextView02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Prima Anual"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/gfhSuma"
+                            style="@style/informationText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textboxskin"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberDecimal"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="7dp"
+                            android:textColor="#818084"
+                            android:textSize="10sp" >
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/gfhPrima"
+                            style="@style/informationText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textboxskin"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="7dp"
+                            android:textColor="#818084"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cotizadorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2472B5" >
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="Coberturas"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Suma Asegurada"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                style="@style/cotizadorheadertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Prima Anual"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#bfbfbf" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:orientation="vertical" >
+
+                        <CheckBox
+                            android:id="@+id/ccompCheck"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Cobertura Complementaria"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <TextView
+                                android:id="@+id/TextView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Edad"
+                                android:textColor="#000000"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/TextView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Sexo"
+                                android:textColor="#000000"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <EditText
+                                android:id="@+id/ccompEdad"
+                                style="@style/informationText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/textboxskin"
+                                android:enabled="false"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:textColor="#818084"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/ccompSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight=".5"
+                                android:gravity="right" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/ccompSuma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/ccompPrima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:orientation="vertical" >
+
+                        <CheckBox
+                            android:id="@+id/catcomp1Check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:checked="false"
+                            android:text="Cáncer Plus"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <TextView
+                                android:id="@+id/TextView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Edad"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/TextView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Sexo"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <EditText
+                                android:id="@+id/catcomp1Edad"
+                                style="@style/informationText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/textboxskin"
+                                android:enabled="false"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:textColor="#818084"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/catcomp1Spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight=".5"
+                                android:gravity="right" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/catcomp1Suma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/catcomp1Prima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+                
+                <View style="@style/Divider" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:orientation="vertical" >
+
+                        <CheckBox
+                            android:id="@+id/catcomp2Check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:text="Cáncer Plus"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <TextView
+                                android:id="@+id/TextView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Edad"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/TextView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Sexo"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <EditText
+                                android:id="@+id/catcomp2Edad"
+                                style="@style/informationText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/textboxskin"
+                                android:enabled="false"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:textColor="#818084"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/catcomp2Spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight=".5"
+                                android:gravity="right" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/catcomp2Suma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/catcomp2Prima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+                
+                <View style="@style/Divider" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:orientation="vertical" >
+
+                        <CheckBox
+                            android:id="@+id/catcomp3Check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".8"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:text="Cáncer Plus"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <TextView
+                                android:id="@+id/TextView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Edad"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/TextView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:text="Sexo"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7" >
+
+                            <EditText
+                                android:id="@+id/catcomp3Edad"
+                                style="@style/informationText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/textboxskin"
+                                android:enabled="false"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="7dp"
+                                android:textColor="#818084"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/catcomp3Spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight=".5"
+                                android:gravity="right" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/catcomp3Suma"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/catcomp3Prima"
+                        style="@style/informationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textboxskin"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:textColor="#818084"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

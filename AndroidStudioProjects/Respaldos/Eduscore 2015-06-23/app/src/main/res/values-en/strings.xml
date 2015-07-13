@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Eduscore</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_guardar">Save</string>
+
+    <string name="msj_pass_no_existe">You must log in again to complete the operation.</string>
+
+    <string name="text_hint_user">User</string>
+    <string name="text_hint_pass">Password</string>
+    <string name="text_entrar">Login</string>
+    <string name="text_salir">Exit</string>
+    <string name="text_progress">Progress...</string>
+    <string name="text_ingresando">Entering The Application.</string>
+    <string name="text_ingresando_permisos">Validating Permissions.</string>
+
+    <string name="text_registro">Admissions</string>
+    <string name="text_informacion_personal">Personal Information</string>
+    <string name="text_nombre">First Name*</string>
+    <string name="text_escribir_nombre">Enter your First Name</string>
+    <string name="text_apellido">Last Name*</string>
+    <string name="text_escribir_apellido">Enter your Last Name</string>
+    <string name="text_correo">Email</string>
+    <string name="text_accion">Action</string>
+    <string name="text_hint_correo">example@domain.com</string>
+    <string name="text_telefono">Telephone</string>
+    <string name="text_hint_telefono">999 999 9999</string>
+    <string name="text_tipo_tel">Type</string>
+    <string name="text_intereses">Select an Interest</string>
+    <string name="text_opciones">Select an Options</string>
+    <string name="text_tipo_interes">Type Interest</string>
+    <string name="text_horario">Schedule:</string>
+
+    <string name="text_adicionales">Additional Data</string>
+    <string name="text_medio">Information Medium</string>
+    <string name="text_medio_selected">Selected a Media.</string>
+    <string name="text_procedencia">Place of Origin</string>
+    <string name="text_procedencia_selected">Selected a Place.</string>
+    <string name="text_probabilidad">Chance of Income</string>
+    <string name="text_probabilidad_select">Select a Chance</string>
+    <string name="text_evento_procedencia">Event of Origin</string>
+    <string name="text_evento_procedencia_selected">Selected an Event.</string>
+
+    <string name="text_datos_personales">Additional Personal Data</string>
+    <string name="text_pais_residencia">Country of Residence</string>
+    <string name="text_hint_pais_residencia">Select a Country of Residence</string>
+    <string name="text_estado_residencia">Region of Residence</string>
+    <string name="text_hint_estado_residencia">Select a Region of Residence</string>
+    <string name="text_ciudad_residencia">City of Residence</string>
+    <string name="text_hint_ciudad_residencia">Select a City of Residence</string>
+    <string name="text_calle">Street</string>
+    <string name="text_hint_calle">Write a Street</string>
+    <string name="text_numero_ext">Number Outdoor</string>
+    <string name="text_hint_numero_ext">Write a Number Outdoor</string>
+    <string name="text_numero_int">Number Inside</string>
+    <string name="text_hint_numero_int">Write a Number Inside</string>
+    <string name="text_colonia">Neighborhood</string>
+    <string name="text_hint_colonia">Write a Neighborhood</string>
+    <string name="text_codigo_postal">Zip Code</string>
+    <string name="text_hint_codigo_postal">Write a Zip Code</string>
+    <string name="text_clave_curp">CURP</string>
+    <string name="text_hint_clave_curp">Write a CURP</string>
+    <string name="text_pais_origen">Country of Origin</string>
+    <string name="text_hint_pais_origen">Select a Country of Origin</string>
+    <string name="text_estado_origen">Region of Origin</string>
+    <string name="text_hint_estado_origen">Select a Region of Origin</string>
+    <string name="text_ciudad_origen">City of Origin</string>
+    <string name="text_hint_ciudad_origen">Select a City of Origin</string>
+    <string name="text_fecha_nacimiento">Date of Birth</string>
+    <string name="text_hint_fecha_nacimiento">Select a Date of Birth</string>
+    <string name="text_guardar_cambios">Save Data</string>
+    <string name="text_actualizar_cambios">Update Data</string>
+    <string name="text_subir_cambios">Upload Data</string>
+    <string name="text_select_pais">Select a Country</string>
+    <string name="text_select_estado">Select a Region</string>
+    <string name="text_select_ciudad">Select a City</string>
+
+    <string name="msj_num_valid">You Must Put a Valid Number.</string>
+    <string name="msj_email_valid">You Must Put a Valid Email.</string>
+    <string name="msj_email_repeat">The Email You Are Trying to Record is Already in Use.</string>
+
+    <string name="msj_error_log">Your Username or Password Does Not Match The Last Session.</string>
+    <string name="msj_error_sesion">Your Username or Password Does Not Exist.</string>
+    <string name="msj_llenar_datos">You Must Fill Out All Data.</string>
+
+    <string name="msj_name_obligatorio">The Name is Required.</string>
+    <string name="msj_lastname_obligatorio">The Last Name is Required.</string>
+    <string name="msj_correo_telefono">It is Mandatory to Put at Least One Email or Telephone.</string>
+    <string name="msj_media_obligatorio">The Information Medium is Required.</string>
+    <string name="msj_wifi">I Need a WIFI Connection to Perform This Process Active.</string>
+    <string name="msj_error_internet">You Must Have Internet To Update Data.</string>
+
+    <string name="msj_registro_ok">Record Saved Successfully.</string>
+    <string name="msj_registro_fail">Failed to Save Log.</string>
+    <string name="msj_email_fail">Failed to Save Email.</string>
+    <string name="msj_telefono_fail">Failed to Save Telephone.</string>
+    <string name="msj_interes_fail">Failed to Save Interest.</string>
+
+    <string name="msj_error_privilegios">You Are Not Authorized.</string>
+
+    <string-array name="spinner_array_tel">
+        <item>Home</item>
+        <item>CellPhone</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="spinner_array_tipo_interes">
+        <item>Classroom / On-line</item>
+        <item>Classroom</item>
+        <item>On-line</item>
+    </string-array>
+
+    <string-array name="spinner_array_horario">
+        <item>Anyone</item>
+        <item>Midweek</item>
+        <item>Sabbatine</item>
+    </string-array>
+
+    <string-array name="spinner_array_probabilidad_ingreso">
+        <item>Select a Chance</item>
+        <item>Very High</item>
+        <item>High</item>
+        <item>Half</item>
+        <item>Low</item>
+        <item>Very Low</item>
+    </string-array>
+
+    <string name="dialog_aceptar">Accept</string>
+    <string name="dialog_limpiar">Clean Filter</string>
+
+</resources>

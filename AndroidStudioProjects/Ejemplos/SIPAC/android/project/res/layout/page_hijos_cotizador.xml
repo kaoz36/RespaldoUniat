@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_margin="13dp" >
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+           			<LinearLayout android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:layout_height="wrap_content" android:background="#2472B5"
+           		                style="@style/cotizadorrow">
+            		            <TextView 
+            		                  android:layout_width="0dp" 
+            		                  android:layout_weight="1"
+            		                  style="@style/cotizadorheadertext"
+            		                  android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+            		                  android:layout_height="wrap_content" android:text="Coberturas" />
+            		            
+            		            <TextView 
+            		                android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                style="@style/cotizadorheadertext"
+            		            	android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+            		                android:layout_height="wrap_content" android:text="Edad" />
+            		            
+            		             <TextView 
+            		                 android:layout_width="0dp" 
+            		                 android:layout_weight="1"
+            		                 style="@style/cotizadorheadertext"
+            		            	 android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+            		                 android:layout_height="wrap_content" android:text="Sexo" />
+            		            
+            		            <TextView 
+            		                android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                style="@style/cotizadorheadertext"
+            		            	android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+            		                android:layout_height="wrap_content" android:text="Suma" />
+            		            
+            		             <TextView 
+            		                 android:layout_width="0dp" 
+            		                 android:layout_weight="1"
+            		                 style="@style/cotizadorheadertext"
+            		            	 android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+            		                 android:layout_height="wrap_content" android:text="Prima Anual" />
+            		</LinearLayout>
+            		<View style="@style/Divider"/>
+            		
+            		<LinearLayout 
+				        android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:gravity="center_vertical"
+            		            android:layout_height="wrap_content" style="@style/cotizadorrow"
+           		               android:background="#FFEFEEED" >
+            		           <Spinner android:id="@+id/gfhSpinner"
+								        android:layout_width="0dp"
+					                   	android:layout_weight="2" 
+						            	android:layout_height="wrap_content" />
+            		           <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/gfhSuma"
+		                    	  
+				            	  style="@style/blackforminput" />
+            		           
+            		           <EditText
+            		              android:imeOptions="actionDone" 
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/gfhPrima"
+		                    	  android:enabled="false"
+		                    	  
+				            	  style="@style/blackforminput" /> 
+            		</LinearLayout>
+            		
+            		         <View style="@style/Divider"/>
+            		         <LinearLayout android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:gravity="center_vertical"
+            		            android:layout_height="wrap_content" style="@style/cotizadorrow" >
+            		             
+            		             <CheckBox 
+						        	android:id="@+id/ccompCheck"
+			                    	android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+			                    	android:layout_height="wrap_content"
+					            	style="@style/blackinfotext"
+					            	android:text="Cobertura Complementaria" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/ccompEdad"
+		                    	  android:maxLength="2"
+				            	  style="@style/blackforminput" />
+            		             
+            		            <Spinner android:id="@+id/ccompSpinner"
+								        android:layout_width="0dp"
+					                   	android:layout_weight="1" 
+						            	android:layout_height="wrap_content" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/ccompSuma"
+		                    	  
+				            	  style="@style/blackforminput" />
+            		             
+            		             <EditText
+            		              android:imeOptions="actionDone" 
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/ccompPrima"
+		                    	  android:enabled="false"
+		                    	  
+				            	  style="@style/blackforminput" /> 
+            		         </LinearLayout>
+            		         <View style="@style/Divider"/>
+            		         <LinearLayout android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:gravity="center_vertical"
+            		            android:layout_height="wrap_content" style="@style/cotizadorrow" android:layout_marginLeft="5dp">
+            		             
+            		             <CheckBox 
+						        	android:id="@+id/catcomp1Check"
+			                    	android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+			                    	android:layout_height="wrap_content"
+					            	style="@style/blackinfotext"
+					            	android:text="Cáncer Plus" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp1Edad"
+		                    	  android:maxLength="2"
+				            	  style="@style/blackforminput" />
+            		             
+            		            <Spinner android:id="@+id/catcomp1Spinner"
+								        android:layout_width="0dp"
+					                   	android:layout_weight="1" 
+						            	android:layout_height="wrap_content" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp1Suma"
+		                    	  
+				            	  style="@style/blackforminput" />
+            		             
+            		             <EditText
+            		              android:imeOptions="actionDone" 
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp1Prima"
+		                    	  android:enabled="false"
+		                    	  
+				            	  style="@style/blackforminput" /> 
+            		         </LinearLayout>
+            		         <View style="@style/Divider"/>
+            		         <LinearLayout android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:gravity="center_vertical"
+            		            android:layout_height="wrap_content" style="@style/cotizadorrow" android:layout_marginLeft="5dp">
+            		             
+            		             <CheckBox 
+						        	android:id="@+id/catcomp2Check"
+			                    	android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+			                    	android:layout_height="wrap_content"
+					            	style="@style/blackinfotext"
+					            	android:text="Cáncer Plus" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp2Edad"
+		                    	  android:maxLength="2"
+				            	  style="@style/blackforminput" />
+            		             
+            		            <Spinner android:id="@+id/catcomp2Spinner"
+								        android:layout_width="0dp"
+					                   	android:layout_weight="1" 
+						            	android:layout_height="wrap_content" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp2Suma"
+		                    	  
+				            	  style="@style/blackforminput" />
+            		             
+            		             <EditText
+            		              android:imeOptions="actionDone" 
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp2Prima"
+		                    	  android:enabled="false"
+		                    	  
+				            	  style="@style/blackforminput" /> 
+            		         </LinearLayout>
+            		         <View style="@style/Divider"/>
+            		         <LinearLayout android:layout_width="fill_parent" 
+            		            android:orientation="horizontal" 
+            		            android:gravity="center_vertical"
+            		            android:layout_height="wrap_content" style="@style/cotizadorrow" android:layout_marginLeft="5dp">
+            		             
+            		             <CheckBox 
+						        	android:id="@+id/catcomp3Check"
+			                    	android:layout_width="0dp" 
+            		                android:layout_weight="1"
+            		                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+			                    	android:layout_height="wrap_content"
+					            	style="@style/blackinfotext"
+					            	android:text="Cáncer Plus" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp3Edad"
+		                    	  android:maxLength="2"
+				            	  style="@style/blackforminput" />
+            		             
+            		            <Spinner android:id="@+id/catcomp3Spinner"
+								        android:layout_width="0dp"
+					                   	android:layout_weight="1" 
+						            	android:layout_height="wrap_content" />
+            		             
+            		             <EditText 
+            		              android:imeOptions="actionDone"
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp3Suma"
+		                    	  
+				            	  style="@style/blackforminput" />
+            		             
+            		             <EditText
+            		              android:imeOptions="actionDone" 
+		                    	  android:layout_width="0dp" 
+            		              android:layout_weight="1"
+            		              android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		                    	  android:layout_height="wrap_content"
+		                    	  android:inputType="number"
+		                    	  android:id="@+id/catcomp3Prima"
+		                    	  android:enabled="false"
+		                    	 
+				            	  style="@style/blackforminput" /> 
+            		         </LinearLayout>
+            		         <View style="@style/Divider"/>
+           	   </LinearLayout>			            		  
+</ScrollView>
